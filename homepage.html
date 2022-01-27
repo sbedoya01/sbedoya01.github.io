@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimu</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="top-menu-value-props-mobile">
+            <p>
+                <strong>Fácil, rápido y en línea.</strong> ¡Envíos gratis a todo <span
+                    style="text-decoration: underline;">Panamá!</span>
+            </p>
+        </div>
+        <section class="top-menu">
+            <div class="container">
+                <div class="col-md-12 d-flex">
+                    <a href="homepage.html">
+                        <div class="brand-logo"><img load="lazy" src="img/imprimu-logo.svg" alt="imprimu logo"></div>
+                    </a>
+                    <div class="d-flex">
+                        <div class="search">
+                            <form>
+                                <input type="text" name="search" placeholder="Encuentra el producto que necesitas">
+                                <a href="#"><img load="lazy" src="img/search.svg" alt="search icon"></a>
+                            </form>
+                        </div>
+                        <div class="top-menu-value-props">
+                            <p>
+                                Fácil, rápido y en línea
+                            </p>
+                            <p>
+                                ¡Envíos gratis a todo <span style="text-decoration: underline;">Panamá!</span>
+                            </p>
+                        </div>
+                        <div class="dropleft show">
+                            <a class="countries btn btn-secondary dropdown-toggle" href="#" role="button"
+                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img load="lazy" src="img/panama-flag.svg" alt="panama flag">
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="d-flex justify-content-between align-items-center dropdown-header">
+                                    <h6><strong>Panamá</strong></h6><img load="lazy" src="img/panama-flag.svg" alt="panama flag">
+                                </div>
+                                <p><strong>Selecciona otro pais:</strong></p>
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Argentina</span><img load="lazy" src="img/argentina-flag.png"
+                                        alt="argentina flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Bolivia</span><img load="lazy" src="img/bolivia-flag.svg" alt="bolivia flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Brasil</span><img load="lazy" src="img/brasil-flag.png" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Chile</span><img load="lazy" src="img/chile-flag.svg" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Colombia</span><img load="lazy" src="img/colombia-flag.svg"
+                                        alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3" href="#"><span>Costa
+                                        Rica</span><img load="lazy" src="img/cr-flag.svg" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Ecuador</span><img load="lazy" src="img/ecuador-flag.png" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3" href="#"><span>El
+                                        Salvador</span><img load="lazy" src="img/elsalvador-flag.png" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Honduras</span><img load="lazy" src="img/honduras-flag.svg"
+                                        alt="Honduras flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3" href="#"><span>Rep.
+                                        Dominicana</span><img load="lazy" src="img/dominican.png"
+                                        alt="República Dominicana flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Perú</span><img load="lazy" src="img/peru-flag.png" alt="brasil flag"></a>
+                            </div>
+                        </div>
+                        <a href="#" class="sign-in">
+                            <div>
+                                <p>INICIA SESIÓN</p>
+                            </div>
+                            <div>
+                                <img load="lazy" src="img/user.svg" alt="user icon">
+                            </div>
+                        </a>
+                        <a href="#" class="sign-up">
+                            <div>
+                                <p>REGÍSTRATE</p>
+                            </div>
+                        </a>
+                        <a href="#" class="top-menu-cart">
+                            <div>
+                                <img load="lazy" src="img/cart.svg" alt="cart">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-menu">
+
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="main-menu-left-side">
+                        <h2>¿Qué quieres imprimir hoy?</h2>
+                        <img load="lazy" src="img/zigzag.png" alt="imprimu-zigzag-figure">
+                    </div>
+
+                    <div class="category-carousel">
+                        <div class="category-selector">
+                            <img load="lazy" src="img/category-selector.svg" alt="category selector">
+                            <img load="lazy" src="img/category-selector.svg" alt="category selector">
+                        </div>
+                        <div onclick="selectCategory(0)" class="menu-item selected">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/papeleria-icon.svg" alt="papeleria-icon">
+                            </div>
+                            <h4>Imprenta</h4>
+                        </div>
+                        <div onclick="selectCategory(1)" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/fotografia-icon.svg" alt="fotografia-icon">
+                            </div>
+                            <h4>Fotografías</h4>
+                        </div>
+                        <div onclick="selectCategory(2)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/regalos-icon.svg" alt="regalos-icon">
+                            </div>
+                            <h4>Regalos</h4>
+                        </div>
+                        <div onclick="selectCategory(3)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/empaque-icon.svg" alt="empaque-icon">
+                            </div>
+                            <h4>Empaque</h4>
+                        </div>
+                        <div onclick="selectCategory(4)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/indumentaria-icon.svg" alt="indumentaria-icon">
+                            </div>
+                            <h4>Indumentaria</h4>
+                        </div>
+                        <div div onclick="selectCategory(5)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/ver-todos-icon.svg" alt="ver-todos-icon">
+                            </div>
+                            <h4>Ver todos</h4>
+                        </div>
+                    </div>
+                    <div class="right-menu">
+                        <a href="#" rel="noreferrer noopener">
+                            <h3>Ayuda profesional</h3><img load="lazy" src="img/arrow-right-solid.svg" alt="arrow-icon">
+                        </a>
+                        <hr>
+                        <a href="#" rel="noreferrer noopener">
+                            <h3>Inspiración</h3><img load="lazy" src="img/arrow-right-solid.svg" alt="arrow-icon">
+                        </a>
+                        <hr>
+                        <a href="#" rel="noreferrer noopener">
+                            <h3>Conócenos</h3><img load="lazy" src="img/arrow-right-solid.svg" alt="arrow-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="products-menu">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="products-carousel">
+                        <ul id="product-carousel-list">
+                            <li>
+                                <a href="sub-category-business-card.html"><img
+                                        src="https://imprimu.com/wp-content/uploads/2021/09/ss.png"
+                                        alt="imprimu product image">
+                                    <h4>Tarjetas de presentación</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product-poster.html"><img load="lazy" src="img/Afiche.png" alt="imprimu product image">
+                                    <h4>Afiches</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/envelopes.png" alt="imprimu product image">
+                                    <h4>Invitaciones</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/Membretes.png" alt="imprimu product image">
+                                    <h4>Membretes</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/envelopes.png" alt="imprimu product image">
+                                    <h4>Tarjetas e invitaciones</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/Cuadernos.png" alt="imprimu product image">
+                                    <h4>Cuadernos</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="move-backward" onclick="scrollToStart(1)">
+                    <img load="lazy" src="img/arrow-right-solid3.svg" alt="Arrow right solid">
+                </div>
+                <div id="move-forward" onclick="scrollToEnd(1)">
+                    <img load="lazy" src="img/arrow-right-solid2.svg" alt="Arrow right solid">
+                </div>
+            </div>
+
+        </section>
+        <section id="seasonal">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="seasonal-banner">
+                        <div class="category">OFERTA</div>
+                        <div class="seasonal-banner-text">
+                            <h2>¡Qué miedo!</h2>
+                            <h3>Lleva el halloween a tu proyecto</h3>
+                            <p>$18,000</p>
+                            <div class="align-items-baseline d-flex">
+                                <h4>$15,000</h4>
+                                <p>45% OFF</p>
+                            </div>
+                        </div>
+                        <div class="seasonal-banner-cta">
+                            <button>COMIENZA AQUÍ</button>
+                        </div>
+                        <div class="seasonal-banner-slider-selector">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="seasonal-banner-zigzag">
+                            <img load="lazy" src="img/seasonal-zigzag.svg" alt="zigzag-seasonal">
+                        </div>
+                        <div class="seasonal-images">
+                            <img load="lazy" src="img/seasonal-pattern.svg" alt="pattern-seasonal">
+                            <img load="lazy" src="img/creepy-family-photo.jpg" alt="Family creepy photo">
+                            <img load="lazy" src="img/tshirt-halloween.png" alt="Tshirt halloween">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="value-props text-center">
+            <div class="value-props-background">
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <h2><strong>¿Cómo funciona? </strong> Tienes suerte, <mark>es simple</mark></h2>
+                    <div class="value-props-cards">
+                        <div>
+                            <img load="lazy" src="img/chose-product.jpg" alt="value props image">
+                            <h2>1. Elije tu producto</h2>
+                            <p>Encuentra mas de 1000 productos para imprimir.</p>
+                        </div>
+                        <div>
+                            <img load="lazy" src="img/customize-product.jpg" alt="value props image">
+                            <h2>2. Personalízalo</h2>
+                            <p>Hazlo tu mismo o puedes optar por recibir nuestra ayuda</p>
+                        </div>
+                        <div>
+                            <img load="lazy" src="img/pay-online.jpg" alt="value props image">
+                            <h2>3. Paga en línea</h2>
+                            <p>Aceptamos todos los medios de pago electrónicos</p>
+                        </div>
+                        <div>
+                            <img load="lazy" src="img/chill.jpg" alt="value props image">
+                            <h2>4. Chilea, va en camino</h2>
+                            <p>Tu pedido llega gratis!</p>
+                        </div>
+                    </div>
+                    <div class="value-props-cards-mobile">
+                        <ul id="value-props-mobile-carousel">
+                            <li>
+                                <div class="value-props-slide-1">
+                                    <img load="lazy" src="img/chose-product.jpg" alt="value props image">
+                                    <h2>1. Elije tu producto</h2>
+                                    <p>Encuentra mas de 1000 productos para imprimir.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="value-props-slide-2">
+                                    <img load="lazy" src="img/customize-product.jpg" alt="value props image">
+                                    <h2>2. Personalízalo</h2>
+                                    <p>Hazlo tu mismo o puedes optar por recibir nuestra ayuda</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="value-props-slide-3">
+                                    <img load="lazy" src="img/pay-online.jpg" alt="value props image">
+                                    <h2>3. Paga en línea</h2>
+                                    <p>Aceptamos todos los medios de pago electrónicos</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="value-props-slide-4">
+                                    <img load="lazy" src="img/chill.jpg" alt="value props image">
+                                    <h2>4. Chilea, va en camino</h2>
+                                    <p>Tu pedido llega gratis!</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="d-flex justify-content-around value-props-nav">
+                            <div onclick="valuePropsNav(0)">Atrás</div>
+                            <div class="d-flex" style="margin-left:1.3rem">
+                                <img load="lazy" src="img/round-dot-selected.svg" alt="round dot">
+                                <img load="lazy" src="img/round-dot.svg" alt="round dot">
+                                <img load="lazy" src="img/round-dot.svg" alt="round dot">
+                                <img load="lazy" src="img/round-dot.svg" alt="round dot">
+                            </div>
+                            <div onclick="valuePropsNav(1)">Siguiente</div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+        </section>
+        <section class="value-props2 text-center">
+            <div>
+                <h2><strong>¿Cómo funciona? </strong> Tienes suerte, <mark>es simple</mark></h2>
+            </div>
+            <div class="container py-3">
+                <img load="lazy" src="img/value-props-icons.svg" alt="Value props icons">
+                <div class="value-props-text">
+                    <h3>Elige tu producto</h3>
+                    <h3>Personalízalo tu mismo o recibe nuestra ayuda</h3>
+                    <h3>Paga en línea</h3>
+                    <h3><strong>Chilea, </strong> va en camino</h3>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2>Productos Favoritos</h2>
+                    <div class="carousel">
+                        <ul id="featured-product-carousel-list">
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale visible">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/07/Tape-imprimu-blanco-fondo-colores-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="product-tshirt.html">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="img/tshirts.png"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Suéter personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/05/Brochures-50-min-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale visible">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/07/letterhead-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/09/ss.png"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/09/ss.png"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="move-backward2" onclick="scrollToStart(2)">
+                    <img load="lazy" src="img/arrow-right-solid3.svg" alt="Arrow right solid">
+                </div>
+                <div id="move-forward2" onclick="scrollToEnd(2)">
+                    <img load="lazy" src="img/arrow-right-solid2.svg" alt="Arrow right solid">
+                </div>
+            </div>
+        </section>
+        <section class="top-selling-products">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2>Los más vendidos</h2>
+                    <div class="carousel">
+                        <ul id="top-selling-product-carousel-list">
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale visible">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/07/Tape-imprimu-blanco-fondo-colores-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/05/Tshirts-50-min-1-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/05/Brochures-50-min-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale visible">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/07/letterhead-300x300.jpg"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/09/ss.png"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="onsale">
+                                            HASTA 45% DE DESCUENTO
+                                        </div>
+                                        <img class="card-img-top"
+                                            src="https://imprimu.com/wp-content/uploads/2021/09/ss.png"
+                                            alt="imprimu product image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tape personalizado</h4>
+                                            <p class="card-text">Desde $50.50</p>
+                                            <a href="#" class="btn">Comenzar a diseñar</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="move-backward3" onclick="scrollToStart(3)">
+                    <img load="lazy" src="img/arrow-right-solid3.svg" alt="Arrow right solid">
+                </div>
+                <div id="move-forward3" onclick="scrollToEnd(3)">
+                    <img load="lazy" src="img/arrow-right-solid2.svg" alt="Arrow right solid">
+                </div>
+            </div>
+        </section>
+        <section class="fast-quick-online">
+            <div class="white-square">
+                <h1>Fácil, rápido, en línea</h1>
+                <p>Somos tu imprenta online. Trabaja tus ideas desde cualquier dispositivo. Brindándote las herramientas
+                    necesarias para que puedas hacer impresiones de forma digital. Estamos siempre a tu alcance.</p>
+                <a href="#">Comienza ahora ></a>
+            </div>
+            <div class="yellow-square"></div>
+
+        </section>
+        <div class="lastest-blog-posts-background"></div>
+        <section class="lastest-blog-posts">
+
+            <div class="col-md-12">
+                <h2>Mira lo que otros ya realizaron, inspírate conociéndolos</h2>
+                <ul>
+                    <div>
+                        <li>
+                            <div class="blogpost-category">
+                                INSPIRACIÓN
+                            </div>
+                            <div class="post-thumb">
+                                <a href="#">
+                                    <img load="lazy" src="img/blogpost-1.png" alt="New blogpost">
+                                </a>
+                            </div>
+                            <div class="post-thumb-info">
+                                <p class="post-info-top">
+                                    <a href="">¿Cómo sacarle provecho a los testimonios de clientes?</a>
+                                </p>
+                                <p class="post-info-excerpt">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida elit vitae
+                                    pretium
+                                    feugiat. Interdum et malesuada fames ac ante ipsum primis in…
+                                </p>
+                                <p class="published-on">Publicado el 10 de octubre de 2021</p>
+                            </div>
+
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <div class="blogpost-category">
+                                INSPIRACIÓN
+                            </div>
+                            <div class="post-thumb">
+                                <a href="#">
+                                    <img load="lazy" src="img/blogpost-2.png" alt="New blogpost">
+                                </a>
+                            </div>
+                            <div class="post-thumb-info">
+                                <p class="post-info-top">
+                                    <a href="">¿Cómo sacarle provecho a los testimonios de clientes?</a>
+                                </p>
+                                <p class="post-info-excerpt">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida elit vitae
+                                    pretium
+                                    feugiat. Interdum et malesuada fames ac ante ipsum primis in…
+                                </p>
+                                <p class="published-on">Publicado el 10 de octubre de 2021</p>
+
+                            </div>
+
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <div class="blogpost-category">
+                                INSPIRACIÓN
+                            </div>
+                            <div class="post-thumb">
+                                <a href="#">
+                                    <img load="lazy" src="img/blogpost-3.png" alt="New blogpost">
+                                </a>
+                            </div>
+                            <div class="post-thumb-info">
+                                <p class="post-info-top">
+                                    <a href="">¿Cómo sacarle provecho a los testimonios de clientes?</a>
+                                </p>
+                                <p class="post-info-excerpt">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida elit vitae
+                                    pretium
+                                    feugiat. Interdum et malesuada fames ac ante ipsum primis in…
+                                </p>
+                                <p class="published-on">Publicado el 10 de octubre de 2021</p>
+
+                            </div>
+
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="customer-review">
+
+            <div class="col-md-12">
+                <h2>¡Nuestros clientes lo reconocen!</h2>
+                <ul>
+                    <li>
+                        <div class="stars">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                        </div>
+                        <h3>"Excelente servicio, sumamente profesionales y el tiempo de espera fue corto. 10/10"</h3>
+                        <p>Elena Arauz</p>
+                    </li>
+                    <li>
+                        <div class="stars">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                        </div>
+                        <h3>"Atención rápida. Recomendado! Producto de calidad. Me hicieron entrega el mismo día."</h3>
+                        <p>Carla González</p>
+
+                    </li>
+                    <li>
+                        <div class="stars">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                            <img load="lazy" src="img/star.svg" alt="star">
+                        </div>
+                        <h3>"Servicio ágil y cordial!"</h3>
+                        <p>Juan Gabriel Polanco</p>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="social-media-feed">
+            <div class="container">
+                <div class="col-md-12">
+                    <h1>#HechoConImprimu</h1>
+                    <p>Continuemos juntos. Encuéntranos en todas las redes sociales. Compartimos nuevos lanzamientos,
+                        productos e ideas. Inspírate viendo las creaciones de otros emprendedores.</p>
+                    <div class="social-media-feed-icons">
+                        <div class="col-xs-6 col-lg-3">
+                            <a href="#">
+                                <div class="facebook-btn d-flex align-items-center"><img load="lazy" src="img/facebook-icon.svg"
+                                        alt="facebook icon">
+                                    <p>FACEBOOK</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <a href="#">
+                                <div class="pinterest-btn d-flex align-items-center"><img load="lazy" src="img/pinterest-icon.svg"
+                                        alt="facebook icon">
+                                    <p>PINTEREST</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <a href="#">
+                                <div class="twitter-btn d-flex align-items-center"><img load="lazy" src="img/twitter-icon.svg"
+                                        alt="facebook icon">
+                                    <p>TWITTER</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <a href="#">
+                                <div class="instagram-btn d-flex align-items-center"><img load="lazy" src="img/instagram-icon.svg"
+                                        alt="facebook icon">
+                                    <p>INSTAGRAM</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-media-feed-images">
+                        <img load="lazy" src="img/social-media-1.png" alt="social media image">
+                        <img load="lazy" src="img/social-media-2.png" alt="social media image">
+                        <img load="lazy" src="img/social-media-3.png" alt="social media image">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="square-dots">
+            <div class="container">
+                <div class="col-md-12">
+                    <img load="lazy" src="img/square-dots.svg" alt="square dots">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="col-md-2">
+                    <div class="brand-logo"><img load="lazy" src="img/imprimu-logo.svg" alt="imprimu logo"></div>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <a href="#">
+                            <li>Menú rápido</li>
+                        </a>
+                        <a href="#">
+                            <li>Productos</li>
+                        </a>
+                        <a href="#">
+                            <li>Sobre Nosotros</li>
+                        </a>
+                        <a href="#">
+                            <li>Corporativo</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <a href="#">
+                            <li>Ayuda y Soporte</li>
+                        </a>
+                        <a href="#">
+                            <li>Recibe ayuda de un diseñador profesional</li>
+                        </a>
+                        <a href="#">
+                            <li>Preguntas Frecuentes</li>
+                        </a>
+                        <a href="#">
+                            <li>Contáctanos</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <a href="#">
+                            <li>Términos y Condiciones</li>
+                        </a>
+                        <a href="#">
+                            <li>Políticas de Cancelación y de reembolso</li>
+                        </a>
+                        <a href="#">
+                            <li>Aviso y Política de Cookies</li>
+                        </a>
+                        <a href="#">
+                            <li>Entregas y Servicios</li>
+                        </a>
+                        <a href="#">
+                            <li>Política de Privacidad</li>
+                        </a>
+                        <a href="#">
+                            <li>Términos y Condiciones</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p>Derechos reservados IMPRIMU S.A. - 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
