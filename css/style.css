@@ -315,7 +315,8 @@ a:hover {
     margin: 0 0.5rem;
 }
 
-.product-page .category-selector{
+.product-page .category-selector,
+.pages .category-selector{
     display: none;
 }
 
@@ -2090,7 +2091,8 @@ table.roundedCorners tr:last-child>td {
     padding-right: 0;
 }
 
-.product-page .dropdown-btn {
+.product-page .dropdown-btn,
+.pages .dropdown-btn {
     margin-top: 21px;
     z-index: 3;
     display: none;
@@ -2100,7 +2102,8 @@ table.roundedCorners tr:last-child>td {
     display: none;
 }
 
-.product-page .products-menu {
+.product-page .products-menu,
+.pages .products-menu {
     display: none;
 }
 
@@ -2344,6 +2347,81 @@ table.roundedCorners tr:last-child>td {
 .category-page .lastest-blog-posts{
     margin-top: -25rem;
 }
+.request-designer{
+    background-color: #FFF;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+    margin-top: 58.87px;
+}
+.request-designer .icon img{
+    width: 139.58px;
+}
+.request-designer h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.request-designer p{
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 500;
+    letter-spacing: -0.23px;
+    color: #000000;
+}
+.order-summary{
+    max-width: 308px !important;
+    min-height: 501px;
+    height: 31rem;
+    box-shadow: 0px 20px 50px #00000029;
+    position: relative;
+    top: -30px;
+}
+.order-summary-bg{
+    width: 312px;
+    min-height: 518px;
+    background-image: url('../img/order-summary-bg.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -17px;
+    padding: 28.56px 16.89px 0 19.45px;
+}
+.order-summary-bg hr{
+    border: 1px solid #707070;
+    margin-top: 15.25px;
+    margin-bottom: 0;
+}
+
+.order-summary-bg > hr + div{
+    margin-top: 30px;
+}
+
+.order-summary-bg h2{
+    font-size: 20px;
+    letter-spacing: -0.3px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15.25px;
+}
+
+.order-summary-bg > div h2{
+    font-weight: 600;
+}
+
+.order-summary-bg h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -0.45px;
+}
+
+.order-summary-bg h4{
+    font-size: 13px;
+    color: #000;
+    margin-top: 15px;
+    line-height: 16px;
+}
 
 @media (min-width: 1200px) {
     .container {
@@ -2473,11 +2551,13 @@ table.roundedCorners tr:last-child>td {
         display: grid;
     }
 
-    .product-page .dropdown-btn {
+    .product-page .dropdown-btn,
+    .pages .dropdown-btn {
         display: block;
     }
 
-    .product-page .dropdown-btn img {
+    .product-page .dropdown-btn img,
+    .pages .dropdown-btn img {
         height: 25px;
         width: auto;
         cursor: pointer;
@@ -2502,7 +2582,8 @@ table.roundedCorners tr:last-child>td {
         overflow: -moz-scrollbars-none;
         -ms-overflow-style: none;
     }
-    .product-page .category-carousel {	
+    .product-page .category-carousel,
+    .pages .category-carousel {	
         margin-left: -249px;	
         display: flex;	
     }	
@@ -2708,7 +2789,8 @@ table.roundedCorners tr:last-child>td {
         /* display: none; */
     }
 
-    .product-page .main-menu {
+    .product-page .main-menu,
+    .pages .main-menu {
         height: 122px;
     }
 
@@ -2971,11 +3053,13 @@ table.roundedCorners tr:last-child>td {
         z-index: 2;	
         padding-top: 23px;	
     }	
-    .product-page .products-menu{	
+    .product-page .products-menu,
+    .pages .products-menu{	
         display: block;	
         height: 170px;	
     }	
-    .product-page .main-menu {	
+    .product-page .main-menu,
+    .pages .main-menu {	
         height: 220px;	
     }
 /*/////////////////////////////////////////*/
@@ -3004,7 +3088,7 @@ table.roundedCorners tr:last-child>td {
         grid-template-columns: repeat(2,1fr);
         position: relative;
         margin: auto;
-        width: 80%;
+        width: 85%;
     }
     .product-gallery .card{
         width: 300px;
@@ -3040,6 +3124,10 @@ table.roundedCorners tr:last-child>td {
 /*/////////////////////////////////////////*/
 /* END OF CATEGORY PAGE MOBILE VERSION */
 /*/////////////////////////////////////////*/
+
+    .request-designer{
+        top: -269px;
+    }
 }
 
 @media (max-width: 1120px) {
@@ -3707,7 +3795,8 @@ table.roundedCorners tr:last-child>td {
         position: unset;
     }
 
-    .product-page .category-carousel{
+    .product-page .category-carousel,
+    .pages .category-carousel{
         margin: 0 0 0 0.75rem;
     }
 
