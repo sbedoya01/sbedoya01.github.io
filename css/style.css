@@ -2426,6 +2426,62 @@ table.roundedCorners tr:last-child>td {
     line-height: 16px;
 }
 
+.contact-form{
+    border: 1px solid #E0E4E9;
+    border-radius: 10px;    
+    padding: 18px 0;
+    margin-top: 20px;
+}
+.form-group{
+    margin-left: 22px;
+}
+.input-group{
+    width: 396px !important;
+}
+
+.input-group-text{
+    color: #000 !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.51px !important;
+    background: #F6FAFD 0% 0% no-repeat padding-box !important;
+    border: 1px solid #E0E4E9 !important;
+    border-radius: 10px 0 0 10px !important;
+    border-right: none !important;
+}
+.input-group-text img{
+    width: 34.31px;
+    margin-right: 17.84px;
+}
+.contact-form button{
+    background-color: #52CE5F;
+    border: none;
+    border-radius: 10px;
+}
+.contact-form button img{
+    width: 22.83px;
+    margin-right: 7.89px;
+}
+.form-control{
+    height: 52px !important;
+    border: 1px solid #E0E4E9 !important;
+    border-radius: 0px 10px 10px 0 !important;
+    border-left: none !important;
+    background: #F6FAFD 0% 0% no-repeat padding-box !important;
+}
+.form-group button{
+    height: 52px !important;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: -0.33px;
+    width: 174.01px;
+}
+label{
+    font-size: 15px;
+    color: #505050;
+    letter-spacing: -0.45px;
+    font-weight: 500;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1054px !important;
