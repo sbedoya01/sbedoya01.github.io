@@ -2025,7 +2025,7 @@ table.roundedCorners tr:last-child>td {
     width: 97%;
     height: 42px;
     position: relative;
-    top: 3.2rem;
+    top: 3.3rem;
     visibility: hidden;
 }
 
@@ -2353,6 +2353,7 @@ table.roundedCorners tr:last-child>td {
     position: relative;
     z-index: 2;
     margin-top: 58.87px;
+    color: #000;
 }
 .request-designer .icon img{
     width: 139.58px;
@@ -2361,6 +2362,11 @@ table.roundedCorners tr:last-child>td {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 25px;
+}
+.request-designer h4{
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
 }
 .request-designer p{
     font-size: 15px;
@@ -2400,7 +2406,6 @@ table.roundedCorners tr:last-child>td {
 .order-summary-bg h2{
     font-size: 20px;
     letter-spacing: -0.3px;
-    color: #000;
     font-weight: bold;
     margin-bottom: 15.25px;
 }
@@ -2412,13 +2417,11 @@ table.roundedCorners tr:last-child>td {
 .order-summary-bg h3{
     font-size: 15px;
     font-weight: 600;
-    color: #000;
     letter-spacing: -0.45px;
 }
 
 .order-summary-bg h4{
     font-size: 13px;
-    color: #000;
     margin-top: 15px;
     line-height: 16px;
 }
