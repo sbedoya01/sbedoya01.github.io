@@ -2355,6 +2355,7 @@ table.roundedCorners tr:last-child>td {
     margin-top: 58.87px;
     color: #000;
 }
+
 .request-designer .icon img{
     width: 139.58px;
 }
@@ -2462,6 +2463,7 @@ table.roundedCorners tr:last-child>td {
 }
 
 .email-form button {
+    background-color: #20ACE7;
     border: none;
     border-radius: 10px;
 }
@@ -2502,6 +2504,7 @@ label{
     letter-spacing: -0.45px;
     font-weight: 500;
 }
+
 
 @media (min-width: 1200px) {
     .container {
@@ -3206,7 +3209,21 @@ label{
 /*/////////////////////////////////////////*/
 
     .request-designer{
-        top: -269px;
+        top: -327px;
+        padding-top: 4rem;
+    }
+    .request-designer .container{
+        padding: 0;
+        margin: -15px auto;
+    }
+    .phone-number-form, .email-form {
+        width: 36rem;
+    }
+    .input-group {
+        width: 339px !important;
+    }
+    .square-dots{
+        margin-top: -13rem;
     }
 }
 
@@ -3377,6 +3394,29 @@ label{
     }
     .category-overview .col-md-2 {
         margin-left: -55%;
+    }
+    .square-dots {
+        margin-top: 35rem;
+    }
+    .phone-number-form, .email-form {
+        width: 33rem;
+        margin: 18.85px auto;
+    }
+    .form-group button{
+        width: 30.5rem;
+    }
+    .order-summary{
+        top: 24px;
+        margin: auto;
+    }
+    .input-group {
+        width: 100% !important;
+    }
+    .request-designer h2{
+        margin-top: 25.58px;
+    }
+    .request-designer h4 {
+        margin-bottom: 11.55px;
     }
 
 }
@@ -3849,6 +3889,7 @@ label{
     .product-gallery .card-img-top{
         height: 155px;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -4034,6 +4075,21 @@ label{
     .product-gallery button{
         width: 100%;
         margin:0;
+    }
+    .square-dots {
+        margin-top: 29rem;
+    }
+    .phone-number-form, .email-form{
+        width: 310px;
+    }
+    .form-group button{
+        width: 269px;
+    }
+    .email-form .form-control{
+        font-size: 12px;
+    }
+    .request-designer h2{
+        margin-bottom: 8px;
     }
 
 }
@@ -4383,6 +4439,9 @@ label{
     }
     .product-gallery ul{
         width: 90%;
+    }
+    .request-designer .icon img {
+        width: 79.34px;
     }
 
 }
