@@ -2424,13 +2424,16 @@ table.roundedCorners tr:last-child>td {
     font-size: 13px;
     margin-top: 15px;
     line-height: 16px;
+    font-weight: 500;
 }
 
-.contact-form{
+.phone-number-form,
+.email-form {
     border: 1px solid #E0E4E9;
     border-radius: 10px;    
-    padding: 18px 0;
+    padding: 18px 0 0 0;
     margin-top: 20px;
+    width: 627.5px;
 }
 .form-group{
     margin-left: 22px;
@@ -2452,28 +2455,46 @@ table.roundedCorners tr:last-child>td {
     width: 34.31px;
     margin-right: 17.84px;
 }
-.contact-form button{
+.phone-number-form button{
     background-color: #52CE5F;
     border: none;
     border-radius: 10px;
 }
-.contact-form button img{
+
+.email-form button {
+    border: none;
+    border-radius: 10px;
+}
+
+.phone-number-form button img,
+.email-form button img {
     width: 22.83px;
     margin-right: 7.89px;
+    margin-top: -3px;
 }
-.form-control{
+.phone-number-form .form-control {
     height: 52px !important;
     border: 1px solid #E0E4E9 !important;
     border-radius: 0px 10px 10px 0 !important;
     border-left: none !important;
     background: #F6FAFD 0% 0% no-repeat padding-box !important;
 }
+
+.email-form .form-control {
+    height: 52px !important;
+    border: 1px solid #E0E4E9 !important;
+    border-radius: 10px 10px 10px 10px !important;
+    background: #F6FAFD 0% 0% no-repeat padding-box !important;
+    font-size: 15px;
+}
+
 .form-group button{
     height: 52px !important;
     font-size: 11px;
     font-weight: bold;
     letter-spacing: -0.33px;
     width: 174.01px;
+    padding: 1px 0 0 0;
 }
 label{
     font-size: 15px;
