@@ -1175,6 +1175,10 @@ a:hover {
     scroll-snap-align: center;
 }
 
+.square-dots:last-child{
+    margin-top: -8rem;
+}
+
 .square-dots img {
     width: 58px;
     height: 14px;
@@ -1479,7 +1483,7 @@ select::-ms-expand {
     font-size: 11px;
     font-weight: bold;
     border: none;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 .product-info p {
@@ -1840,7 +1844,8 @@ select:focus {
 }
 
 .more-products {
-    margin-bottom: 155px;
+    /* margin-bottom: 155px; */
+    margin-bottom: 70px;
 }
 
 .more-products h1 {
@@ -2025,7 +2030,7 @@ table.roundedCorners tr:last-child>td {
     width: 97%;
     height: 42px;
     position: relative;
-    top: 3.3rem;
+    top: 3.2rem;
     visibility: hidden;
 }
 
@@ -2503,6 +2508,49 @@ label{
     color: #505050;
     letter-spacing: -0.45px;
     font-weight: 500;
+}
+
+.contact-form-indicator{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #20ACE7;
+    border-radius: 10px;
+    width: 39.5rem;
+    height: 8rem;
+    position: relative;
+    top: 9.3rem;
+    margin-top: -134px;
+    left: -2px;
+    pointer-events: none;
+    visibility: hidden;
+}
+.contact-form-indicator-tablet {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #20ACE7;
+    border-radius: 10px;
+    width: 33rem;
+    height: 11.3rem;
+    position: relative;
+    top: 12.4rem;
+    margin: -182px auto 0 auto;
+    left: 0px;
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
+}
+
+.contact-form-indicator-mobile {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #20ACE7;
+    border-radius: 10px;
+    width: 19.5rem;
+    height: 11.3rem;
+    position: relative;
+    top: 12.4rem;
+    margin: -182px auto 0 auto;
+    left: 0px;
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
 }
 
 
@@ -3211,6 +3259,7 @@ label{
     .request-designer{
         top: -327px;
         padding-top: 4rem;
+        height: 270px;
     }
     .request-designer .container{
         padding: 0;
@@ -3222,8 +3271,8 @@ label{
     .input-group {
         width: 339px !important;
     }
-    .square-dots{
-        margin-top: -13rem;
+    .contact-form-indicator{
+        width: 36.2rem;
     }
 }
 
@@ -3395,8 +3444,11 @@ label{
     .category-overview .col-md-2 {
         margin-left: -55%;
     }
-    .square-dots {
-        margin-top: 35rem;
+    .product-page .square-dots{
+        display: none;
+    }
+    .pages .square-dots {
+        margin-top: 45rem;
     }
     .phone-number-form, .email-form {
         width: 33rem;
@@ -3417,6 +3469,12 @@ label{
     }
     .request-designer h4 {
         margin-bottom: 11.55px;
+    }
+    .contact-form-indicator{
+        display: none;
+    }
+    .contact-form-indicator-tablet{
+        display: block;
     }
 
 }
@@ -4076,9 +4134,6 @@ label{
         width: 100%;
         margin:0;
     }
-    .square-dots {
-        margin-top: 29rem;
-    }
     .phone-number-form, .email-form{
         width: 310px;
     }
@@ -4090,6 +4145,12 @@ label{
     }
     .request-designer h2{
         margin-bottom: 8px;
+    }
+    .contact-form-indicator-tablet{
+        display: none;
+    }
+    .contact-form-indicator-mobile{
+        display: block;
     }
 
 }

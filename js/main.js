@@ -76,6 +76,7 @@ function selectCategory(index) {
         $('.product-page').find('.category-carousel').css('margin-left','-104px');        
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
+        $('.pages').find('.category-carousel').css('margin-left','-365px');
       }
 
       console.log($(window).width());
@@ -760,7 +761,17 @@ function toggleCategoryMenu(){
       // Animation complete.
     }
   );
+  $('.request-designer').animate(
+    {
+      top: "-262px",
+    },
+    500,
+    function () {
+      // Animation complete.
+    }
+  );
   $('.breadcrumbs').find('span').css('margin-top','19px');
+  $('.pages .square-dots').css('margin-top','50rem');
 
 }
 
@@ -799,3 +810,73 @@ $('#thumnails-carousel').on("scroll", function () {
       .attr("src", "img/round-dot-selected.svg");
   }
 });
+
+//*************************************************************************************/
+//FUNCTION USED TO SHOW SELECTOR ON CONTACT FORMS
+//*************************************************************************************/
+
+function contactSelect(p){
+  switch (p) {
+    case 0:      
+      $('.contact-form-indicator').animate(
+        {
+          top: "9.3rem",
+        },
+        300,
+        function () {          
+        }
+      );
+      $('.contact-form-indicator-tablet').animate(
+        {
+          top: "12.4rem",
+        },
+        300,
+        function () {          
+        }
+      );
+      $('.contact-form-indicator-mobile').animate(
+        {
+          top: "12.4rem",
+        },
+        300,
+        function () {          
+        }
+      );
+      $('.contact-form-indicator').css('visibility','visible');
+      $('.contact-form-indicator-tablet').css('visibility','visible');
+      $('.contact-form-indicator-mobile').css('visibility','visible');
+      break;
+    case 1:      
+      $('.contact-form-indicator').animate(
+        {
+          top: "18.5rem",
+        },
+        300,
+        function () {          
+        }
+      );
+      $('.contact-form-indicator-tablet').animate(
+        {
+          top: "24.9rem",
+        },
+        300,
+        function () {          
+        }
+      );
+      $('.contact-form-indicator-mobile').animate(
+        {
+          top: "24.8rem",
+        },
+        300,
+        function () {          
+        }
+      );
+      $('.contact-form-indicator').css('visibility','visible');
+      $('.contact-form-indicator-tablet').css('visibility','visible');
+      $('.contact-form-indicator-mobile').css('visibility','visible');
+      break;
+  
+    default:
+      break;
+  }
+}
