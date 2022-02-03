@@ -72,8 +72,8 @@ function selectCategory(index) {
   switch (index) {
     case 0:
       if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-101px');
-        $('.product-page').find('.category-carousel').css('margin-left','-104px');        
+        $('.category-carousel').css('margin-left','-7.3rem');
+        $('.product-page').find('.category-carousel').css('margin-left','-118px');        
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
         $('.pages').find('.category-carousel').css('margin-left','-365px');
@@ -87,7 +87,7 @@ function selectCategory(index) {
         .first()
         .animate(
           {
-            left: "13.9rem",
+            left: "13.65rem",
           },
           300,
           function () {
@@ -99,7 +99,7 @@ function selectCategory(index) {
         .last()
         .animate(
           {
-            left: "6.25rem",
+            left: "7rem",
           },
           300,
           function () {
@@ -117,8 +117,8 @@ function selectCategory(index) {
       break;
     case 1:
       if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-101px');
-        $('.product-page').find('.category-carousel').css('margin-left','-104px'); 
+        $('.category-carousel').css('margin-left','-7.3rem');
+        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
       }
@@ -129,7 +129,7 @@ function selectCategory(index) {
         .first()
         .animate(
           {
-            left: "19.95rem",
+            left: "19.6rem",
           },
           300,
           function () {
@@ -141,7 +141,7 @@ function selectCategory(index) {
         .last()
         .animate(
           {
-            left: "11.51rem",
+            left: "12.85rem",
           },
           300,
           function () {
@@ -159,8 +159,8 @@ function selectCategory(index) {
       break;
     case 2:
       if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-101px');
-        $('.product-page').find('.category-carousel').css('margin-left','-104px'); 
+        $('.category-carousel').css('margin-left','-7.3rem');
+        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
       }
@@ -171,7 +171,7 @@ function selectCategory(index) {
         .first()
         .animate(
           {
-            left: "25.95rem",
+            left: "25.6rem",
           },
           300,
           function () {
@@ -183,7 +183,7 @@ function selectCategory(index) {
         .last()
         .animate(
           {
-            left: "16.7rem",
+            left: "18.7rem",
           },
           300,
           function () {
@@ -197,8 +197,8 @@ function selectCategory(index) {
       break;
     case 3:
       if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-101px');
-        $('.product-page').find('.category-carousel').css('margin-left','-104px'); 
+        $('.category-carousel').css('margin-left','-7.3rem');
+        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
       }
@@ -209,7 +209,7 @@ function selectCategory(index) {
         .first()
         .animate(
           {
-            left: "31.95rem",
+            left: "31.6rem",
           },
           300,
           function () {
@@ -221,7 +221,7 @@ function selectCategory(index) {
         .last()
         .animate(
           {
-            left: "22rem",
+            left: "24.63rem",
           },
           300,
           function () {
@@ -235,8 +235,8 @@ function selectCategory(index) {
       break;
     case 4:
       if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-101px');
-        $('.product-page').find('.category-carousel').css('margin-left','-104px'); 
+        $('.category-carousel').css('margin-left','-7.3rem');
+        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
       }
@@ -247,7 +247,7 @@ function selectCategory(index) {
         .first()
         .animate(
           {
-            left: "37.95rem",
+            left: "37.6rem",
           },
           300,
           function () {
@@ -259,7 +259,7 @@ function selectCategory(index) {
         .last()
         .animate(
           {
-            left: "27.25rem",
+            left: "30.55rem",
           },
           300,
           function () {
@@ -279,8 +279,8 @@ function selectCategory(index) {
       break;
     case 5:
       if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-101px');
-        $('.product-page').find('.category-carousel').css('margin-left','-104px'); 
+        $('.category-carousel').css('margin-left','-7.3rem');
+        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
       }else if($(window).width() <= 1199){
         $('.product-page').find('.category-carousel').css('margin-left','-365px');
       }
@@ -291,7 +291,7 @@ function selectCategory(index) {
         .first()
         .animate(
           {
-            left: "43.95rem",
+            left: "43.6rem",
           },
           300,
           function () {
@@ -303,7 +303,7 @@ function selectCategory(index) {
         .last()
         .animate(
           {
-            left: "32.46rem",
+            left: "36.4rem",
           },
           300,
           function () {

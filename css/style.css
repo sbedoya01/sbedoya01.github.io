@@ -321,10 +321,10 @@ a:hover {
 }
 
 .category-selector img {
-    width: 11%;
+    width: 12%;
     position: absolute;
-    top: 0.5rem;
-    left: 13.9rem;
+    top: 0.6rem;
+    left: 13.65rem;
     z-index: 1;
 }
 
@@ -2707,7 +2707,7 @@ label{
         padding: 0;
         position: relative;
         left: 50%;
-        margin-left: -365px;
+        margin-left: -414px;
         overflow-x: scroll;
         overflow-y: hidden;
         overflow: -moz-scrollbars-none;
@@ -2724,9 +2724,9 @@ label{
     }
 
     .category-selector img {
-        width: 116px;
+        width: 130px;
         top: 0.1rem;
-        left: 6.25rem;
+        left: 7rem;
         position: relative;
     }
 
@@ -2738,7 +2738,7 @@ label{
         display: block;
     }
     .menu-item{
-        margin: 0 -15px;
+        margin: 0 -10px;
     }
 
     .menu-icon {
@@ -3481,10 +3481,10 @@ label{
 
 @media (max-width: 900px) {
     .menu-item{
-        margin: 0 -15px;
+        margin: 0 -10px;
     }
     .category-selector img {
-        left: 6.25rem;
+        left: 7rem;
     }
     .customer-review ul {
         justify-content: unset;
@@ -3846,7 +3846,7 @@ label{
     }
 
     .category-carousel {
-        margin: 0 0 0 -356px;
+        margin: 0 0 0 -396px;
         left: 50%;
         position: relative;
     }
@@ -3969,7 +3969,7 @@ label{
         margin-left: 0;
     }
     .category-carousel {
-        margin: 0 0 0 -6.3rem;
+        margin: 0 0 0 -7.3rem;
         left: 0;
         position: unset;
     }
