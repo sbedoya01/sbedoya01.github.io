@@ -2135,7 +2135,7 @@ table.roundedCorners tr:last-child>td {
     overflow-x: scroll;
 }
 .product-images-carousel li{
-    margin-left: 1rem;
+    margin-right: 1rem;
     min-width: 100%;
     overflow-y: hidden;
     scroll-snap-align: center;
@@ -3445,7 +3445,7 @@ label{
     .category-overview .col-md-2 {
         margin-left: -55%;
     }
-    .product-page .square-dots{
+    .product-page .square-dots-mobile {
         display: none;
     }
     .pages .square-dots {
