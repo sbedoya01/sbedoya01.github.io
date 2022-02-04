@@ -1603,6 +1603,7 @@ select:focus {
     margin-bottom: 0;
     letter-spacing: -0.65px;
     font-size: 12.7px;
+    white-space: nowrap;
 }
 
 .how-to-design-option:last-child {
@@ -2119,7 +2120,7 @@ table.roundedCorners tr:last-child>td {
 
 .product-options img {
     width: 80.2px;
-    height: auto;
+    height: 80.2px;
     margin-right: 8.45px;
 }
 .product-images-carousel{
