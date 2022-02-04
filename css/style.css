@@ -1932,7 +1932,7 @@ select:focus {
 
 .more-products li:first-child img:nth-child(3) {
     position: relative;
-    top: -50%;
+    top: -12rem;
     left: 21%;
     width: 59%;
 }
@@ -1940,12 +1940,12 @@ select:focus {
 .more-products li:nth-child(2) img:nth-child(3) {
     position: relative;
     width: 100%;
-    top: -49%;
+    top: -12rem;
 }
 
 .more-products li:last-child img:nth-child(3) {
     position: relative;
-    top: -47%;
+    top: -11rem;
     left: 0%;
     width: 83%;
 }
