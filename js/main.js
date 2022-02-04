@@ -625,6 +625,21 @@ function productSelectorTab(m){
       break;
     case 2:
       $('.quantity-indicator').css('visibility','visible');
+      if (
+        navigator.userAgent.indexOf('Safari') != -1 && 
+        navigator.userAgent.indexOf('Chrome') == -1 && 
+        navigator.userAgent.indexOf('CriOS/') == -1
+    )  { 
+      $('.quantity-indicator').animate(
+        {
+          top: "8.4rem",
+        },
+        300,
+        function () {
+          // Animation complete.
+        }
+      );
+    }else{
       $('.quantity-indicator').animate(
         {
           top: "8.5rem",
@@ -634,21 +649,55 @@ function productSelectorTab(m){
           // Animation complete.
         }
       );
+    }
+      
       break;
     case 3:
       $('.quantity-indicator').css('visibility','visible');
+      if (
+        navigator.userAgent.indexOf('Safari') != -1 && 
+        navigator.userAgent.indexOf('Chrome') == -1 && 
+        navigator.userAgent.indexOf('CriOS/') == -1
+    )  { 
       $('.quantity-indicator').animate(
         {
-          top: "11.2rem",
+          top: "11.1rem",
         },
         300,
         function () {
           // Animation complete.
         }
       );
+    }else{
+      $('.quantity-indicator').animate(
+      {
+        top: "11.2rem",
+      },
+      300,
+      function () {
+        // Animation complete.
+      }
+    );
+  }
+      
       break;
     case 4:
       $('.quantity-indicator').css('visibility','visible');
+      if (
+        navigator.userAgent.indexOf('Safari') != -1 && 
+        navigator.userAgent.indexOf('Chrome') == -1 && 
+        navigator.userAgent.indexOf('CriOS/') == -1
+    )  { 
+      $('.quantity-indicator').animate(
+        {
+          top: "13.7rem",
+        },
+        300,
+        function () {
+          // Animation complete.
+        }
+      );
+    }else{
       $('.quantity-indicator').animate(
         {
           top: "13.8rem",
@@ -658,18 +707,37 @@ function productSelectorTab(m){
           // Animation complete.
         }
       );
+    }
+      
       break;
     case 5:
       $('.quantity-indicator').css('visibility','visible');
-    $('.quantity-indicator').animate(
-      {
-        top: "16.4rem",
-      },
-      300,
-      function () {
-        // Animation complete.
-      }
-    );
+      if (
+        navigator.userAgent.indexOf('Safari') != -1 && 
+        navigator.userAgent.indexOf('Chrome') == -1 && 
+        navigator.userAgent.indexOf('CriOS/') == -1
+    )  { 
+      $('.quantity-indicator').animate(
+        {
+          top: "16.3rem",
+        },
+        300,
+        function () {
+          // Animation complete.
+        }
+      );
+    }else{
+      $('.quantity-indicator').animate(
+        {
+          top: "16.45rem",
+        },
+        300,
+        function () {
+          // Animation complete.
+        }
+      );
+    }
+    
     break;
     case 6:
       $('.quantity-indicator').css('visibility','visible');
@@ -680,7 +748,7 @@ function productSelectorTab(m){
     )  { 
       $('.quantity-indicator').animate(
         {
-          top: "18rem",
+          top: "18.9rem",
         },
         300,
         function () {
