@@ -673,15 +673,32 @@ function productSelectorTab(m){
     break;
     case 6:
       $('.quantity-indicator').css('visibility','visible');
-    $('.quantity-indicator').animate(
-      {
-        top: "27.5%",
-      },
-      300,
-      function () {
-        // Animation complete.
-      }
-    );
+      if (
+        navigator.userAgent.indexOf('Safari') != -1 && 
+        navigator.userAgent.indexOf('Chrome') == -1 && 
+        navigator.userAgent.indexOf('CriOS/') == -1
+    )  { 
+      $('.quantity-indicator').animate(
+        {
+          top: "18rem",
+        },
+        300,
+        function () {
+          // Animation complete.
+        }
+      );
+    }else{
+      $('.quantity-indicator').animate(
+        {
+          top: "19.1rem",
+        },
+        300,
+        function () {
+          // Animation complete.
+        }
+      );
+    }
+    
     break;
 
     default:
