@@ -675,7 +675,7 @@ function productSelectorTab(m){
       $('.quantity-indicator').css('visibility','visible');
     $('.quantity-indicator').animate(
       {
-        top: "306px",
+        top: "19.1rem",
       },
       300,
       function () {
