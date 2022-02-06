@@ -366,11 +366,11 @@ a:hover {
     -webkit-overflow-scrolling: touch;
 }
 
-.products-carousel ul::-webkit-scrollbar, .carousel ul::-webkit-scrollbar, #value-props-mobile-carousel::-webkit-scrollbar, .lastest-blog-posts ul::-webkit-scrollbar, .customer-review ul::-webkit-scrollbar, .social-media-feed-images::-webkit-scrollbar, .more-products ul::-webkit-scrollbar, .product-images-carousel ul::-webkit-scrollbar {
+.products-carousel ul::-webkit-scrollbar, .carousel ul::-webkit-scrollbar, #value-props-mobile-carousel::-webkit-scrollbar, .latest-blog-posts ul::-webkit-scrollbar, .customer-review ul::-webkit-scrollbar, .social-media-feed-images::-webkit-scrollbar, .more-products ul::-webkit-scrollbar, .product-images-carousel ul::-webkit-scrollbar {
     display: none;
 }
 
-.products-carousel ul, .carousel ul, #value-props-mobile-carousel, .lastest-blog-posts ul, .customer-review ul, .social-media-feed-images, .more-products ul, .product-images-carousel ul {
+.products-carousel ul, .carousel ul, #value-props-mobile-carousel, .latest-blog-posts ul, .customer-review ul, .social-media-feed-images, .more-products ul, .product-images-carousel ul {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -932,7 +932,7 @@ a:hover {
     margin-left: 3.5rem;
 }
 
-.lastest-blog-posts {
+.latest-blog-posts {
     margin-top: -44rem;
     padding-left: 33px;
     margin-right: auto;
@@ -948,7 +948,7 @@ a:hover {
     max-width: 1173px;
 }
 
-.lastest-blog-posts h2 {
+.latest-blog-posts h2 {
     font-size: 32px;
     font-weight: 600;
     color: #000;
@@ -985,21 +985,24 @@ a:hover {
     margin-top: 19px;
 }
 
-.lastest-blog-posts ul, .customer-review ul {
+.latest-blog-posts ul, .customer-review ul {
     display: flex;
     list-style: none;
     padding: 0;
     scroll-snap-type: x mandatory;
 }
 
-.lastest-blog-posts li {
+.latest-blog-posts li {
     background-color: #fff;
     border-radius: 10px;
     margin: 34px 51px 0 0;
     box-shadow: 10px 10px 20px 0px rgb(0 0 0 / 10%), -10px 10px 20px 0px rgb(0 0 0 / 10%);
     max-width: 320px;
-    padding-bottom: 0.01rem;
+    /* padding-bottom: 0.01rem; */
     scroll-snap-align: center;
+    min-height: 511.66px;
+    display: flex;
+    flex-direction: column;
 }
 
 .customer-review li {
@@ -1011,13 +1014,14 @@ a:hover {
     scroll-snap-align: center;
 }
 
-.lastest-blog-posts img, .customer-review img {
+.latest-blog-posts img, .customer-review img {
     border-radius: 10px 10px 0 0;
     height: 278px;
+    width: 320px;
     max-width: 100%;
 }
 
-.lastest-blog-posts .post-info-excerpt,
+.latest-blog-posts .post-info-excerpt,
 .customer-review .post-info-excerpt {
     padding-top: 12px;
     text-align: center;
@@ -1028,7 +1032,7 @@ a:hover {
     margin: 0 15px;
 }
 
-.lastest-blog-posts .post-info-top,
+.latest-blog-posts .post-info-top,
 .customer-review .post-info-top {
     padding: 25px 15px 0 15px;
     font-weight: 800;
@@ -1045,10 +1049,11 @@ a:hover {
     color: #707070;
     font-size: 11px;
     text-align: center;
-    margin: 26px 0 18px 0;
+    margin-top: auto;
+    /* margin: 26px 0 18px 0; */
 }
 
-.lastest-blog-posts .post-thumb, .lastest-blog-posts .post-thumb-info, .customer-review .post-thumb,
+.latest-blog-posts .post-thumb, .latest-blog-posts .post-thumb-info, .customer-review .post-thumb,
 .customer-review .post-thumb-info {
     width: 100%;
 }
@@ -1069,7 +1074,7 @@ a:hover {
     letter-spacing: -0.17px;
 }
 
-.lastest-blog-posts-background {
+.latest-blog-posts-background {
     position: relative;
     background-color: #F5F5F5;
     width: 100%;
@@ -2347,11 +2352,11 @@ table.roundedCorners tr:last-child>td {
     object-fit: cover;
 }
 
-.category-page .lastest-blog-posts-background{
+.category-page .latest-blog-posts-background{
     top: 3.8rem;
 }
 
-.category-page .lastest-blog-posts{
+.category-page .latest-blog-posts{
     margin-top: -25rem;
 }
 .request-designer{
@@ -2806,12 +2811,12 @@ label{
         margin-top: 2rem;
     }
 
-    .lastest-blog-posts,
+    .latest-blog-posts,
     .customer-review {
         max-width: 97.8vw;
     }
 
-    .lastest-blog-posts li,
+    .latest-blog-posts li,
     .customer-review li {
         max-width: 26.7vw;
     }
@@ -2820,7 +2825,7 @@ label{
         width: 26.7vw;
     }
 
-    /* .lastest-blog-posts{
+    /* .latest-blog-posts{
         margin-top: -18rem;
     } */
     .social-media-feed-icons {
@@ -2837,21 +2842,21 @@ label{
         height: 28vw;
     }
 
-    .lastest-blog-posts .col-md-12 {
+    .latest-blog-posts .col-md-12 {
         padding-left: 0;
     }
 
-    .lastest-blog-posts h2 {
+    .latest-blog-posts h2 {
         font-size: 20px;
         margin-left: 1rem;
     }
 
-    .lastest-blog-posts li {
+    .latest-blog-posts li {
         min-width: 320px;
         margin: 34px -1px 0 1rem;
     }
 
-    .lastest-blog-posts ul {
+    .latest-blog-posts ul {
         overflow-x: scroll;
         padding-bottom: 2rem;
         justify-content: center;
@@ -2867,7 +2872,7 @@ label{
         padding: 0 0 2rem 0;
     }
 
-    .lastest-blog-posts-background {
+    .latest-blog-posts-background {
         height: 66rem;
         top: 197.4rem;
         z-index: -1;
@@ -3250,7 +3255,7 @@ label{
         font-size: 7px;
         padding: 2px 5px;
     }
-    .category-page .lastest-blog-posts-background{
+    .category-page .latest-blog-posts-background{
         height: 31rem;
     }
 
@@ -3279,7 +3284,7 @@ label{
 }
 
 @media (max-width: 1120px) {
-    .lastest-blog-posts ul {
+    .latest-blog-posts ul {
         justify-content: unset;
     }
 
@@ -3320,7 +3325,7 @@ label{
         display: none;
     }
 
-    .lastest-blog-posts {
+    .latest-blog-posts {
         padding: 0;
     }
 
@@ -3695,26 +3700,26 @@ label{
         height: 858px;
     }
 
-    .lastest-blog-posts {
+    .latest-blog-posts {
         padding-left: 0;
         margin-top: -58rem;
     }
 
-    .lastest-blog-posts .col-md-12 {
+    .latest-blog-posts .col-md-12 {
         padding-left: 0;
     }
 
-    .lastest-blog-posts h2 {
+    .latest-blog-posts h2 {
         font-size: 20px;
         margin-left: 1rem;
     }
 
-    .lastest-blog-posts li {
+    .latest-blog-posts li {
         min-width: 320px;
         margin: 34px -1px 0 1rem;
     }
 
-    .lastest-blog-posts ul {
+    .latest-blog-posts ul {
         overflow-x: scroll;
         width: 100vw;
         padding-bottom: 2rem;
@@ -3726,7 +3731,7 @@ label{
         padding: 0 0 2rem 0;
     }
 
-    .lastest-blog-posts-background {
+    .latest-blog-posts-background {
         height: 46rem;
         top: -18rem;
         z-index: -2;
@@ -4091,11 +4096,11 @@ label{
         background-image: url('../img/dots-background-600px.svg');
     }
 
-    .lastest-blog-posts-background {
+    .latest-blog-posts-background {
         height: 51rem;
     }
 
-    .lastest-blog-posts {
+    .latest-blog-posts {
         margin-top: -59rem;
     }
 
@@ -4360,21 +4365,25 @@ label{
         background-image: url('../img/dots-background-mobile.svg');
     }
 
-    .lastest-blog-posts .col-md-12 {
+    .latest-blog-posts .col-md-12 {
         padding-left: 0;
     }
 
-    .lastest-blog-posts h2 {
+    .latest-blog-posts h2 {
         font-size: 20px;
         margin-left: 1rem;
     }
 
-    .lastest-blog-posts li {
+    .latest-blog-posts li {
         min-width: 320px;
         margin: 34px -1px 0 1rem;
     }
 
-    .lastest-blog-posts ul {
+    .latest-blog-posts  ul  div:last-child  li {
+        margin-right: 20px;
+    }
+
+    .latest-blog-posts ul {
         overflow-x: scroll;
         width: 100vw;
         padding-bottom: 2rem;
