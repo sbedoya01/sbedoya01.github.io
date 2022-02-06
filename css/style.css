@@ -4452,7 +4452,7 @@ label{
     }
 
     .social-media-feed-images {
-        margin-left: -1rem;
+        margin-left: -2.5rem;
         overflow-x: scroll;
     }
 
@@ -4546,7 +4546,7 @@ label{
     }
 
     .social-media-feed-icons {
-        margin: 0 -1rem;
+        margin: 0 auto;
         padding: 0;
     }
 
