@@ -1166,6 +1166,7 @@ a:hover {
     margin-top: 44px;
     margin-left: -3.1rem;
     scroll-snap-type: x mandatory;
+    list-style: none;
 }
 
 .social-media-feed-images img {
