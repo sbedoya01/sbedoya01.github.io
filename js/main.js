@@ -5,11 +5,13 @@
 function scrollToEnd(pos) {
   switch (pos) {
     case 1:
-      $('#product-carousel-list').animate({
-        scrollLeft: 900
-      }, 2000, function(){
-
-      });
+      $("#product-carousel-list").animate(
+        {
+          scrollLeft: 900,
+        },
+        2000,
+        function () {}
+      );
       $("#move-forward").fadeOut("slow");
       setTimeout(() => {
         $("#move-backward").fadeIn("slow");
@@ -36,11 +38,13 @@ function scrollToEnd(pos) {
 function scrollToStart(pos) {
   switch (pos) {
     case 1:
-      $('#product-carousel-list').animate({
-        scrollLeft: 0
-      }, 1000, function(){
-
-      });
+      $("#product-carousel-list").animate(
+        {
+          scrollLeft: 0,
+        },
+        1000,
+        function () {}
+      );
       $("#move-backward").fadeOut("slow");
       setTimeout(() => {
         $("#move-forward").fadeIn("slow");
@@ -71,17 +75,7 @@ function scrollToStart(pos) {
 function selectCategory(index) {
   switch (index) {
     case 0:
-      if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-7.3rem');
-        $('.product-page').find('.category-carousel').css('margin-left','-118px');        
-      }else if($(window).width() <= 1199){
-        $('.product-page').find('.category-carousel').css('margin-left','-365px');
-        $('.pages').find('.category-carousel').css('margin-left','-365px');
-      }
-
-      console.log($(window).width());
-      
-      $(".category-selector").css('display','block');
+      toggleProductsMenu();
       $(".category-selector")
         .find("img")
         .first()
@@ -108,22 +102,23 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").first().addClass("selected");
-      $('#product-carousel-list').find('li').fadeOut("slow");
+      $("#product-carousel-list").find("li").fadeOut("slow");
       setTimeout(() => {
-        $('#product-carousel-list').find('li').fadeIn("slow");
-        $('#product-carousel-list').find('li').first().find('img').attr('src','https://imprimu.com/wp-content/uploads/2021/09/ss.png');
-        $('#product-carousel-list').find('li').first().find('a').attr('href','product-business-card.html');
+        $("#product-carousel-list").find("li").fadeIn("slow");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("img")
+          .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("a")
+          .attr("href", "product-business-card.html");
       }, 500);
       break;
     case 1:
-      if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-7.3rem');
-        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
-      }else if($(window).width() <= 1199){
-        $('.product-page').find('.category-carousel').css('margin-left','-365px');
-      }
-      
-      $(".category-selector").css('display','block');
+      toggleProductsMenu();
       $(".category-selector")
         .find("img")
         .first()
@@ -150,22 +145,23 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(1).addClass("selected");
-      $('#product-carousel-list').find('li').fadeOut("slow");
+      $("#product-carousel-list").find("li").fadeOut("slow");
       setTimeout(() => {
-        $('#product-carousel-list').find('li').fadeIn("slow");
-        $('#product-carousel-list').find('li').first().find('img').attr('src','https://imprimu.com/wp-content/uploads/2021/09/ss.png');
-        $('#product-carousel-list').find('li').first().find('a').attr('href','product-business-card.html');
+        $("#product-carousel-list").find("li").fadeIn("slow");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("img")
+          .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("a")
+          .attr("href", "product-business-card.html");
       }, 500);
       break;
     case 2:
-      if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-7.3rem');
-        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
-      }else if($(window).width() <= 1199){
-        $('.product-page').find('.category-carousel').css('margin-left','-365px');
-      }
-      
-      $(".category-selector").css('display','block');
+      toggleProductsMenu();
       $(".category-selector")
         .find("img")
         .first()
@@ -192,18 +188,15 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(2).addClass("selected");
-      $('#product-carousel-list').find('li').css('display','block');
-      $('#product-carousel-list').find('li').first().find('img').attr('src','https://imprimu.com/wp-content/uploads/2021/09/ss.png');
+      $("#product-carousel-list").find("li").css("display", "block");
+      $("#product-carousel-list")
+        .find("li")
+        .first()
+        .find("img")
+        .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
       break;
     case 3:
-      if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-7.3rem');
-        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
-      }else if($(window).width() <= 1199){
-        $('.product-page').find('.category-carousel').css('margin-left','-365px');
-      }
-      
-      $(".category-selector").css('display','block');
+      toggleProductsMenu();
       $(".category-selector")
         .find("img")
         .first()
@@ -230,18 +223,15 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(3).addClass("selected");
-      $('#product-carousel-list').find('li').css('display','block');
-      $('#product-carousel-list').find('li').first().find('img').attr('src','https://imprimu.com/wp-content/uploads/2021/09/ss.png');
+      $("#product-carousel-list").find("li").css("display", "block");
+      $("#product-carousel-list")
+        .find("li")
+        .first()
+        .find("img")
+        .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
       break;
     case 4:
-      if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-7.3rem');
-        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
-      }else if($(window).width() <= 1199){
-        $('.product-page').find('.category-carousel').css('margin-left','-365px');
-      }
-      
-      $(".category-selector").css('display','block');
+      toggleProductsMenu();
       $(".category-selector")
         .find("img")
         .first()
@@ -268,24 +258,29 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(4).addClass("selected");
-      $('#product-carousel-list').find('li').fadeOut("slow");
+      $("#product-carousel-list").find("li").fadeOut("slow");
       setTimeout(() => {
-        $('#product-carousel-list').find('li').first().find('img').attr('src','img/tshirts.png');
-        $('#product-carousel-list').find('li').first().find('h4').text('Suéter personalizado');
-        $('#product-carousel-list').find('li').first().find('a').attr('href','product-tshirt.html');
-        $('#product-carousel-list').find('li').first().fadeIn("slow");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("img")
+          .attr("src", "img/tshirts.png");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("h4")
+          .text("Suéter personalizado");
+        $("#product-carousel-list")
+          .find("li")
+          .first()
+          .find("a")
+          .attr("href", "product-tshirt.html");
+        $("#product-carousel-list").find("li").first().fadeIn("slow");
       }, 500);
-      
+
       break;
     case 5:
-      if ($(window).width() <= 600){
-        $('.category-carousel').css('margin-left','-7.3rem');
-        $('.product-page').find('.category-carousel').css('margin-left','-118px'); 
-      }else if($(window).width() <= 1199){
-        $('.product-page').find('.category-carousel').css('margin-left','-365px');
-      }
-      
-      $(".category-selector").css('display','block');
+      toggleProductsMenu();
       $(".category-selector")
         .find("img")
         .first()
@@ -312,8 +307,12 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(5).addClass("selected");
-      $('#product-carousel-list').find('li').css('display','block');
-      $('#product-carousel-list').find('li').first().find('img').attr('src','https://imprimu.com/wp-content/uploads/2021/09/ss.png');
+      $("#product-carousel-list").find("li").css("display", "block");
+      $("#product-carousel-list")
+        .find("li")
+        .first()
+        .find("img")
+        .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
       break;
     default:
       $(".category-selector")
@@ -329,8 +328,12 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(5).addClass("selected");
-      $('#product-carousel-list').find('li').css('display','block');
-      $('#product-carousel-list').find('li').first().find('img').attr('src','https://imprimu.com/wp-content/uploads/2021/09/ss.png');
+      $("#product-carousel-list").find("li").css("display", "block");
+      $("#product-carousel-list")
+        .find("li")
+        .first()
+        .find("img")
+        .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
       break;
   }
 }
@@ -450,12 +453,12 @@ function tabsSelection(k) {
   $(".description-tabs").find("li").eq(k).addClass("tab-selected");
   switch (k) {
     case 0:
-      $('.description').css('display','block');
-      $('.aditional-info').css('display','none');
+      $(".description").css("display", "block");
+      $(".aditional-info").css("display", "none");
       break;
     case 1:
-      $('.description').css('display','none');
-      $('.aditional-info').css('display','block');
+      $(".description").css("display", "none");
+      $(".aditional-info").css("display", "block");
       break;
 
     default:
@@ -467,16 +470,16 @@ function tabsSelection(k) {
 //FUNCTION USED TO SHOW USER SELECTION ON DESIGN OPTIONS
 //************************************************************************/
 
-function designOption(l){
+function designOption(l) {
   switch (l) {
     case 0:
-      $('.how-to-design-indicator').css('visibility','visible');
-      $('.how-to-design-indicator-tablet').css('visibility','visible');
-      $('.how-to-design-indicator-mobile').css('visibility','visible');
-      $('.how-to-design-option').first().addClass('chosen');
-      $('.how-to-design-option').eq(1).removeClass('chosen');
-      $('.how-to-design-option').last().removeClass('chosen');
-      $('.how-to-design-indicator').animate(
+      $(".how-to-design-indicator").css("visibility", "visible");
+      $(".how-to-design-indicator-tablet").css("visibility", "visible");
+      $(".how-to-design-indicator-mobile").css("visibility", "visible");
+      $(".how-to-design-option").first().addClass("chosen");
+      $(".how-to-design-option").eq(1).removeClass("chosen");
+      $(".how-to-design-option").last().removeClass("chosen");
+      $(".how-to-design-indicator").animate(
         {
           left: "-2px",
         },
@@ -485,7 +488,7 @@ function designOption(l){
           // Animation complete.
         }
       );
-      $('.how-to-design-indicator-tablet').animate(
+      $(".how-to-design-indicator-tablet").animate(
         {
           left: "-17px",
         },
@@ -494,7 +497,7 @@ function designOption(l){
           // Animation complete.
         }
       );
-      $('.how-to-design-indicator-mobile').animate(
+      $(".how-to-design-indicator-mobile").animate(
         {
           top: "6.2rem",
         },
@@ -505,13 +508,13 @@ function designOption(l){
       );
       break;
     case 1:
-      $('.how-to-design-indicator').css('visibility','visible');
-      $('.how-to-design-indicator-tablet').css('visibility','visible');
-      $('.how-to-design-indicator-mobile').css('visibility','visible');
-      $('.how-to-design-option').first().removeClass('chosen');
-      $('.how-to-design-option').eq(1).addClass('chosen');
-      $('.how-to-design-option').last().removeClass('chosen');
-      $('.how-to-design-indicator').animate(
+      $(".how-to-design-indicator").css("visibility", "visible");
+      $(".how-to-design-indicator-tablet").css("visibility", "visible");
+      $(".how-to-design-indicator-mobile").css("visibility", "visible");
+      $(".how-to-design-option").first().removeClass("chosen");
+      $(".how-to-design-option").eq(1).addClass("chosen");
+      $(".how-to-design-option").last().removeClass("chosen");
+      $(".how-to-design-indicator").animate(
         {
           left: "9.82rem",
         },
@@ -520,7 +523,7 @@ function designOption(l){
           // Animation complete.
         }
       );
-      $('.how-to-design-indicator-tablet').animate(
+      $(".how-to-design-indicator-tablet").animate(
         {
           left: "8.85rem",
         },
@@ -529,7 +532,7 @@ function designOption(l){
           // Animation complete.
         }
       );
-      $('.how-to-design-indicator-mobile').animate(
+      $(".how-to-design-indicator-mobile").animate(
         {
           top: "13.2rem",
         },
@@ -540,13 +543,13 @@ function designOption(l){
       );
       break;
     case 2:
-      $('.how-to-design-indicator').css('visibility','visible');
-      $('.how-to-design-indicator-tablet').css('visibility','visible');
-      $('.how-to-design-indicator-mobile').css('visibility','visible');
-      $('.how-to-design-option').first().removeClass('chosen');
-      $('.how-to-design-option').eq(1).removeClass('chosen');
-      $('.how-to-design-option').last().addClass('chosen');
-      $('.how-to-design-indicator').animate(
+      $(".how-to-design-indicator").css("visibility", "visible");
+      $(".how-to-design-indicator-tablet").css("visibility", "visible");
+      $(".how-to-design-indicator-mobile").css("visibility", "visible");
+      $(".how-to-design-option").first().removeClass("chosen");
+      $(".how-to-design-option").eq(1).removeClass("chosen");
+      $(".how-to-design-option").last().addClass("chosen");
+      $(".how-to-design-indicator").animate(
         {
           left: "19.68rem",
         },
@@ -555,7 +558,7 @@ function designOption(l){
           // Animation complete.
         }
       );
-      $('.how-to-design-indicator-tablet').animate(
+      $(".how-to-design-indicator-tablet").animate(
         {
           left: "18.75rem",
         },
@@ -564,7 +567,7 @@ function designOption(l){
           // Animation complete.
         }
       );
-      $('.how-to-design-indicator-mobile').animate(
+      $(".how-to-design-indicator-mobile").animate(
         {
           top: "20.2rem",
         },
@@ -577,30 +580,28 @@ function designOption(l){
     default:
       break;
   }
-
 }
 //************************************************************************/
 //FUNCTION USED TO SHOW USER'S LIKE ON PRODUCT
 //************************************************************************/
 
-function favourite(){
-  if( $('.like').find('img').attr('src') == 'img/heart-selected.svg'){
-    $('.like').find('img').attr('src','img/heart.svg');
-  }else{
-    $('.like').find('img').attr('src','img/heart-selected.svg');
+function favourite() {
+  if ($(".like").find("img").attr("src") == "img/heart-selected.svg") {
+    $(".like").find("img").attr("src", "img/heart.svg");
+  } else {
+    $(".like").find("img").attr("src", "img/heart-selected.svg");
   }
-  
 }
 
 //************************************************************************/
 //FUNCTION USED TO SHOW USER SELECTION ON PRODUCT OPTIONS TAB
 //************************************************************************/
 
-function productSelectorTab(m){
+function productSelectorTab(m) {
   switch (m) {
     case 0:
-      $('.quantity-indicator').css('visibility','visible');
-      $('.quantity-indicator').animate(
+      $(".quantity-indicator").css("visibility", "visible");
+      $(".quantity-indicator").animate(
         {
           top: "3.2rem",
         },
@@ -612,8 +613,8 @@ function productSelectorTab(m){
       break;
 
     case 1:
-      $('.quantity-indicator').css('visibility','visible');
-      $('.quantity-indicator').animate(
+      $(".quantity-indicator").css("visibility", "visible");
+      $(".quantity-indicator").animate(
         {
           top: "5.85rem",
         },
@@ -624,150 +625,150 @@ function productSelectorTab(m){
       );
       break;
     case 2:
-      $('.quantity-indicator').css('visibility','visible');
+      $(".quantity-indicator").css("visibility", "visible");
       if (
-        navigator.userAgent.indexOf('Safari') != -1 && 
-        navigator.userAgent.indexOf('Chrome') == -1 && 
-        navigator.userAgent.indexOf('CriOS/') == -1
-    )  { 
-      $('.quantity-indicator').animate(
-        {
-          top: "8.4rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }else{
-      $('.quantity-indicator').animate(
-        {
-          top: "8.5rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }
-      
+        navigator.userAgent.indexOf("Safari") != -1 &&
+        navigator.userAgent.indexOf("Chrome") == -1 &&
+        navigator.userAgent.indexOf("CriOS/") == -1
+      ) {
+        $(".quantity-indicator").animate(
+          {
+            top: "8.4rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      } else {
+        $(".quantity-indicator").animate(
+          {
+            top: "8.5rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      }
+
       break;
     case 3:
-      $('.quantity-indicator').css('visibility','visible');
+      $(".quantity-indicator").css("visibility", "visible");
       if (
-        navigator.userAgent.indexOf('Safari') != -1 && 
-        navigator.userAgent.indexOf('Chrome') == -1 && 
-        navigator.userAgent.indexOf('CriOS/') == -1
-    )  { 
-      $('.quantity-indicator').animate(
-        {
-          top: "11.1rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }else{
-      $('.quantity-indicator').animate(
-      {
-        top: "11.2rem",
-      },
-      300,
-      function () {
-        // Animation complete.
+        navigator.userAgent.indexOf("Safari") != -1 &&
+        navigator.userAgent.indexOf("Chrome") == -1 &&
+        navigator.userAgent.indexOf("CriOS/") == -1
+      ) {
+        $(".quantity-indicator").animate(
+          {
+            top: "11.1rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      } else {
+        $(".quantity-indicator").animate(
+          {
+            top: "11.2rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
       }
-    );
-  }
-      
+
       break;
     case 4:
-      $('.quantity-indicator').css('visibility','visible');
+      $(".quantity-indicator").css("visibility", "visible");
       if (
-        navigator.userAgent.indexOf('Safari') != -1 && 
-        navigator.userAgent.indexOf('Chrome') == -1 && 
-        navigator.userAgent.indexOf('CriOS/') == -1
-    )  { 
-      $('.quantity-indicator').animate(
-        {
-          top: "13.7rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }else{
-      $('.quantity-indicator').animate(
-        {
-          top: "13.8rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }
-      
+        navigator.userAgent.indexOf("Safari") != -1 &&
+        navigator.userAgent.indexOf("Chrome") == -1 &&
+        navigator.userAgent.indexOf("CriOS/") == -1
+      ) {
+        $(".quantity-indicator").animate(
+          {
+            top: "13.7rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      } else {
+        $(".quantity-indicator").animate(
+          {
+            top: "13.8rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      }
+
       break;
     case 5:
-      $('.quantity-indicator').css('visibility','visible');
+      $(".quantity-indicator").css("visibility", "visible");
       if (
-        navigator.userAgent.indexOf('Safari') != -1 && 
-        navigator.userAgent.indexOf('Chrome') == -1 && 
-        navigator.userAgent.indexOf('CriOS/') == -1
-    )  { 
-      $('.quantity-indicator').animate(
-        {
-          top: "16.3rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }else{
-      $('.quantity-indicator').animate(
-        {
-          top: "16.45rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }
-    
-    break;
+        navigator.userAgent.indexOf("Safari") != -1 &&
+        navigator.userAgent.indexOf("Chrome") == -1 &&
+        navigator.userAgent.indexOf("CriOS/") == -1
+      ) {
+        $(".quantity-indicator").animate(
+          {
+            top: "16.3rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      } else {
+        $(".quantity-indicator").animate(
+          {
+            top: "16.45rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      }
+
+      break;
     case 6:
-      $('.quantity-indicator').css('visibility','visible');
+      $(".quantity-indicator").css("visibility", "visible");
       if (
-        navigator.userAgent.indexOf('Safari') != -1 && 
-        navigator.userAgent.indexOf('Chrome') == -1 && 
-        navigator.userAgent.indexOf('CriOS/') == -1
-    )  { 
-      $('.quantity-indicator').animate(
-        {
-          top: "18.9rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }else{
-      $('.quantity-indicator').animate(
-        {
-          top: "19.1rem",
-        },
-        300,
-        function () {
-          // Animation complete.
-        }
-      );
-    }
-    
-    break;
+        navigator.userAgent.indexOf("Safari") != -1 &&
+        navigator.userAgent.indexOf("Chrome") == -1 &&
+        navigator.userAgent.indexOf("CriOS/") == -1
+      ) {
+        $(".quantity-indicator").animate(
+          {
+            top: "18.9rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      } else {
+        $(".quantity-indicator").animate(
+          {
+            top: "19.1rem",
+          },
+          300,
+          function () {
+            // Animation complete.
+          }
+        );
+      }
+
+      break;
 
     default:
       break;
@@ -778,48 +779,52 @@ function productSelectorTab(m){
 //FUNCTION USED TO SHOW USER SELECTION ON BUSINESS CARD SIDES
 //************************************************************************/
 
-function sidesSelector(n){
-  $('.sides').find('div').removeClass('chosen');
-  $('.sides').find('div').eq(n).addClass('chosen');
+function sidesSelector(n) {
+  $(".sides").find("div").removeClass("chosen");
+  $(".sides").find("div").eq(n).addClass("chosen");
 }
 
 //************************************************************************/
 //FUNCTION USED TO SHOW USER SELECTION ON BUSINESS CARD FINISHING
 //************************************************************************/
 
-function finishingSelector(n){
-  $('.finishing').find('div').removeClass('chosen');
-  $('.finishing').find('div').eq(n).addClass('chosen');
+function finishingSelector(n) {
+  $(".finishing").find("div").removeClass("chosen");
+  $(".finishing").find("div").eq(n).addClass("chosen");
 }
 
 //************************************************************************/
 //FUNCTION USED TO SHOW USER SELECTION ON BUSINESS CARD PAPER
 //************************************************************************/
 
-function paperSelector(n){
-  $('.paper').find('div').removeClass('chosen');
-  $('.paper').find('div').eq(n).addClass('chosen');
+function paperSelector(n) {
+  $(".paper").find("div").removeClass("chosen");
+  $(".paper").find("div").eq(n).addClass("chosen");
 }
 
 //************************************************************************/
 //FUNCTION USED TO TOOGLE CATEGORY MENU ON PRODUCT PAGE
 //************************************************************************/
 
-function toggleCategoryMenu(){
-  $('.product-page').find('.category-carousel').css('display','flex');
-  $('.product-page').find('.description-tabs').css('margin-top','36px');
-  $('.products-menu').css('display','block');
-  $('.dropdown-btn').css('display','none');
-  $('.product-page').find('.main-menu').animate(
-    {
-      height: "220px",
-    },
-    500,
-    function () {
-      // Animation complete.
-    }
-  );
-  $('.products-menu').animate(
+function toggleCategoryMenu() {
+  $(".product-page").find(".category-carousel").css("display", "flex");
+  $(".product-page").find(".description-tabs").css("margin-top", "36px");
+  $(".product-page").find(".products-menu").css("visibility", "visible");
+  $(".pages").find(".products-menu").css("visibility", "visible");
+  $(".products-menu").css("display", "block");
+  $(".dropdown-btn").css("display", "none");
+  $(".product-page")
+    .find(".main-menu")
+    .animate(
+      {
+        height: "220px",
+      },
+      500,
+      function () {
+        // Animation complete.
+      }
+    );
+  $(".products-menu").animate(
     {
       height: "203px",
     },
@@ -828,7 +833,7 @@ function toggleCategoryMenu(){
       // Animation complete.
     }
   );
-  $('.breadcrumbs').animate(
+  $(".breadcrumbs").animate(
     {
       top: "0px",
     },
@@ -837,7 +842,7 @@ function toggleCategoryMenu(){
       // Animation complete.
     }
   );
-  $('.product-info').animate(
+  $(".product-info").animate(
     {
       top: "0px",
     },
@@ -846,35 +851,37 @@ function toggleCategoryMenu(){
       // Animation complete.
     }
   );
-  $('.request-designer').animate(
+  $(".request-designer").animate(
     {
-      top: "-262px",
+      top: "-50px",
     },
     500,
     function () {
       // Animation complete.
     }
   );
-  $('.breadcrumbs').find('span').css('margin-top','19px');
-  $('.pages .square-dots').css('margin-top','50rem');
-
+  $(".breadcrumbs").find("span").css("margin-top", "19px");
+  $(".pages .square-dots").css("margin-top", "50rem");
 }
 
 //************************************************************************/
 //FUNCTION USED TO TOOGLE PRODUCT OPTIONS
 //************************************************************************/
 
-function toggleProductOptions(o){
-  let selectedProductOption = $('.product-options').find('img').eq(o).attr('src');
-  $('.product-info').find('img').first().attr('src',selectedProductOption);
+function toggleProductOptions(o) {
+  let selectedProductOption = $(".product-options")
+    .find("img")
+    .eq(o)
+    .attr("src");
+  $(".product-info").find("img").first().attr("src", selectedProductOption);
 }
 
 //*************************************************************************************/
 //FUNCTION USED TO TRANSFORM PRODUCT IMAGES SECTION INTO A CAROUSEL FOR MOBILE DEVICES
 //*************************************************************************************/
 
-$('#thumnails-carousel').on("scroll", function () {
-  let productImgUl = document.getElementById('thumnails-carousel');
+$("#thumnails-carousel").on("scroll", function () {
+  let productImgUl = document.getElementById("thumnails-carousel");
   if (productImgUl.scrollLeft < 250) {
     $(".slider-selector").find("img").attr("src", "img/round-dot-white.svg");
     $(".slider-selector")
@@ -887,7 +894,7 @@ $('#thumnails-carousel').on("scroll", function () {
       .find("img")
       .eq(1)
       .attr("src", "img/round-dot-selected.svg");
-  } else{
+  } else {
     $(".slider-selector").find("img").attr("src", "img/round-dot-white.svg");
     $(".slider-selector")
       .find("img")
@@ -900,68 +907,102 @@ $('#thumnails-carousel').on("scroll", function () {
 //FUNCTION USED TO SHOW SELECTOR ON CONTACT FORMS
 //*************************************************************************************/
 
-function contactSelect(p){
+function contactSelect(p) {
   switch (p) {
-    case 0:      
-      $('.contact-form-indicator').animate(
+    case 0:
+      $(".contact-form-indicator").animate(
         {
           top: "9.3rem",
         },
         300,
-        function () {          
-        }
+        function () {}
       );
-      $('.contact-form-indicator-tablet').animate(
+      $(".contact-form-indicator-tablet").animate(
         {
           top: "12.4rem",
         },
         300,
-        function () {          
-        }
+        function () {}
       );
-      $('.contact-form-indicator-mobile').animate(
+      $(".contact-form-indicator-mobile").animate(
         {
           top: "12.4rem",
         },
         300,
-        function () {          
-        }
+        function () {}
       );
-      $('.contact-form-indicator').css('visibility','visible');
-      $('.contact-form-indicator-tablet').css('visibility','visible');
-      $('.contact-form-indicator-mobile').css('visibility','visible');
+      $(".contact-form-indicator").css("visibility", "visible");
+      $(".contact-form-indicator-tablet").css("visibility", "visible");
+      $(".contact-form-indicator-mobile").css("visibility", "visible");
       break;
-    case 1:      
-      $('.contact-form-indicator').animate(
+    case 1:
+      $(".contact-form-indicator").animate(
         {
           top: "18.5rem",
         },
         300,
-        function () {          
-        }
+        function () {}
       );
-      $('.contact-form-indicator-tablet').animate(
+      $(".contact-form-indicator-tablet").animate(
         {
           top: "24.9rem",
         },
         300,
-        function () {          
-        }
+        function () {}
       );
-      $('.contact-form-indicator-mobile').animate(
+      $(".contact-form-indicator-mobile").animate(
         {
           top: "24.8rem",
         },
         300,
-        function () {          
-        }
+        function () {}
       );
-      $('.contact-form-indicator').css('visibility','visible');
-      $('.contact-form-indicator-tablet').css('visibility','visible');
-      $('.contact-form-indicator-mobile').css('visibility','visible');
+      $(".contact-form-indicator").css("visibility", "visible");
+      $(".contact-form-indicator-tablet").css("visibility", "visible");
+      $(".contact-form-indicator-mobile").css("visibility", "visible");
       break;
-  
+
     default:
       break;
   }
+}
+
+//*************************************************************************************/
+//FUNCTION USED TO TOGGLE PRODUCTS MENU ON PAGES AND PRODUCT PAGE
+//*************************************************************************************/
+
+function toggleProductsMenu() {
+  if ($(window).width() <= 600) {
+    $(".category-carousel").css("margin-left", "-7.38rem");
+    $(".product-page").find(".category-carousel").css("margin-left", "-118px");
+  } else if ($(window).width() <= 1199) {
+    $(".product-page").find(".category-carousel").css("margin-left", "-406px");
+    $(".pages").find(".category-carousel").css("margin-left", "-406px");
+  }
+
+  $(".product-page").find(".products-menu").css("visibility", "visible");
+  $(".pages").find(".products-menu").css("visibility", "visible");
+  $(".category-selector").css("display", "block");
+  $(".product-page")
+    .find(".breadcrumbs")
+    .animate(
+      {
+        "margin-top": "0",
+      },
+      500,
+      function () {
+        // Animation complete.
+      }
+    );
+  $(".pages")
+    .find(".request-designer")
+    .animate(
+      {
+        "margin-top": "60px",
+      },
+      500,
+      function () {
+        // Animation complete.
+      }
+    );
 }

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimu</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />    
+    <script src="https://kit.fontawesome.com/472ac3013b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="site-wrapper pages">
+        <div class="top-menu-value-props-mobile">
+            <p>
+                <strong>Fácil, rápido y en línea.</strong> ¡Envíos gratis a todo <span
+                    style="text-decoration: underline;">Panamá!</span>
+            </p>
+        </div>
+        <section class="top-menu">
+            <div class="container">
+                <div class="col-md-12 d-flex">
+                    <a href="homepage.html">
+                        <div class="brand-logo"><img load="lazy" src="img/imprimu-logo.svg" alt="imprimu logo"></div>
+                    </a>
+                    <div class="d-flex">
+                        <div class="search">
+                            <form>
+                                <input type="text" name="search" placeholder="Encuentra el producto que necesitas">
+                                <a href="#"><img load="lazy" src="img/search.svg" alt="search icon"></a>
+                            </form>
+                        </div>
+                        <div class="top-menu-value-props">
+                            <p>
+                                Fácil, rápido y en línea
+                            </p>
+                            <p>
+                                ¡Envíos gratis a todo <span style="text-decoration: underline;">Panamá!</span>
+                            </p>
+                        </div>
+                        <div class="dropleft show">
+                            <a class="countries btn btn-secondary dropdown-toggle" href="#" role="button"
+                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img load="lazy" src="img/panama-flag.svg" alt="panama flag">
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="d-flex justify-content-between align-items-center dropdown-header">
+                                    <h6><strong>Panamá</strong></h6><img load="lazy" src="img/panama-flag.svg"
+                                        alt="panama flag">
+                                </div>
+                                <p><strong>Selecciona otro pais:</strong></p>
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Argentina</span><img load="lazy" src="img/argentina-flag.png"
+                                        alt="argentina flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Bolivia</span><img load="lazy" src="img/bolivia-flag.svg"
+                                        alt="bolivia flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Brasil</span><img load="lazy" src="img/brasil-flag.png"
+                                        alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Chile</span><img src="img/chile-flag.svg" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Colombia</span><img load="lazy" src="img/colombia-flag.svg"
+                                        alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3" href="#"><span>Costa
+                                        Rica</span><img load="lazy" src="img/cr-flag.svg" alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Ecuador</span><img load="lazy" src="img/ecuador-flag.png"
+                                        alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3" href="#"><span>El
+                                        Salvador</span><img load="lazy" src="img/elsalvador-flag.png"
+                                        alt="brasil flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Honduras</span><img load="lazy" src="img/honduras-flag.svg"
+                                        alt="Honduras flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3" href="#"><span>Rep.
+                                        Dominicana</span><img load="lazy" src="img/dominican.png"
+                                        alt="República Dominicana flag"></a>
+                                <hr class="mx-2 my-1">
+                                <a class="dropdown-item d-flex justify-content-between pr-3"
+                                    href="#"><span>Perú</span><img src="img/peru-flag.png" alt="brasil flag"></a>
+                            </div>
+                        </div>
+                        <a href="#" class="sign-in">
+                            <div>
+                                <p>INICIA SESIÓN</p>
+                            </div>
+                            <div>
+                                <img load="lazy" src="img/user.svg" alt="user icon">
+                            </div>
+                        </a>
+                        <a href="#" class="sign-up">
+                            <div>
+                                <p>REGÍSTRATE</p>
+                            </div>
+                        </a>
+                        <a href="#" class="top-menu-cart">
+                            <div>
+                                <img load="lazy" src="img/cart.svg" alt="cart">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-menu">
+
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="main-menu-left-side">
+                        <h2>¿Qué quieres imprimir hoy?</h2>
+                        <img load="lazy" src="img/zigzag.png" alt="imprimu-zigzag-figure">
+                        <div class="dropdown-btn">
+                            <a onclick="toggleCategoryMenu()">
+                                <img load="lazy" src="img/dropdown-btn.svg" alt="Dropdown button">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="category-carousel">
+                        <div class="category-selector">
+                            <img load="lazy" src="img/category-selector.svg" alt="category selector">
+                            <img load="lazy" src="img/category-selector.svg" alt="category selector">
+                        </div>
+                        <div onclick="selectCategory(0)" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/papeleria-icon.svg" alt="papeleria-icon">
+                            </div>
+                            <h4>Imprenta</h4>
+                        </div>
+                        <div onclick="selectCategory(1)" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/fotografia-icon.svg" alt="fotografia-icon">
+                            </div>
+                            <h4>Fotografías</h4>
+                        </div>
+                        <div onclick="selectCategory(2)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/regalos-icon.svg" alt="regalos-icon">
+                            </div>
+                            <h4>Regalos</h4>
+                        </div>
+                        <div onclick="selectCategory(3)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/empaque-icon.svg" alt="empaque-icon">
+                            </div>
+                            <h4>Empaque</h4>
+                        </div>
+                        <div onclick="selectCategory(4)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/indumentaria-icon.svg" alt="indumentaria-icon">
+                            </div>
+                            <h4>Indumentaria</h4>
+                        </div>
+                        <div div onclick="selectCategory(5)" href="#" rel="noreferrer noopener" class="menu-item">
+                            <div class="menu-icon">
+                                <img load="lazy" src="img/ver-todos-icon.svg" alt="ver-todos-icon">
+                            </div>
+                            <h4>Ver todos</h4>
+                        </div>
+                    </div>
+                    <div class="right-menu">
+                        <a href="#" rel="noreferrer noopener">
+                            <h3>Ayuda profesional</h3><img load="lazy" src="img/arrow-right-solid.svg" alt="arrow-icon">
+                        </a>
+                        <hr>
+                        <a href="#" rel="noreferrer noopener">
+                            <h3>Inspiración</h3><img load="lazy" src="img/arrow-right-solid.svg" alt="arrow-icon">
+                        </a>
+                        <hr>
+                        <a href="#" rel="noreferrer noopener">
+                            <h3>Conócenos</h3><img load="lazy" src="img/arrow-right-solid.svg" alt="arrow-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-menu">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="products-carousel">
+                        <ul id="product-carousel-list">
+                            <li>
+                                <a href="sub-category-business-card.html"><img load="lazy"
+                                        src="https://imprimu.com/wp-content/uploads/2021/09/ss.png"
+                                        alt="imprimu product image">
+                                    <h4>Tarjetas de presentación</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product-tshirt.html"><img load="lazy" src="img/tshirts.png"
+                                        alt="imprimu product image">
+                                    <h4>Suéter personalizado</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/envelopes.png" alt="imprimu product image">
+                                    <h4>Invitaciones</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/Membretes.png" alt="imprimu product image">
+                                    <h4>Membretes</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/envelopes.png" alt="imprimu product image">
+                                    <h4>Tarjetas e invitaciones</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img load="lazy" src="img/Cuadernos.png" alt="imprimu product image">
+                                    <h4>Cuadernos</h4>
+                                    <p>Desde $50.50 por 100 unidades</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="move-backward" onclick="scrollToStart(1)">
+                    <img load="lazy" src="img/arrow-right-solid3.svg" alt="Arrow right solid">
+                </div>
+                <div id="move-forward" onclick="scrollToEnd(1)">
+                    <img load="lazy" src="img/arrow-right-solid2.svg" alt="Arrow right solid">
+                </div>
+            </div>
+
+        </section>
+        <section class="cart">
+            <div class="container">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="col-12 col-lg-8 mr-xl-4">
+                        <div class="buying-steps">
+                            <hr>
+                            <ul class="d-flex flex-column flex-lg-row justify-content-between">
+                                <li>
+                                    <div>
+                                        <div class="rounded-div">
+                                            <img src="../img/cart-white.svg" alt="Cart icon">
+                                        </div>
+                                        <h5>1. Carrito</h5>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="rounded-div">
+                                            <img src="../img/delivery.svg" alt="Delivery icon">
+                                        </div>
+                                        <h5>2. Envío</h5>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="rounded-div">
+                                            <img src="../img/credit-card.svg" alt="Credit card icon">
+                                        </div>
+                                        <h5>3. Pago</h5>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="rounded-div">
+                                            <img src="../img/check.svg" alt="Check icon">
+                                        </div>
+                                        <h5>4. ¡Listo!</h5>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="items-ordered">
+                            <li>
+                                <div class="col-3">
+                                    <img src="img/business-card-mockup-mobile.png" alt="product thumbnail">
+                                </div>                                
+                                <div class="col-9">
+                                    <div class="d-flex">
+                                        <h4>Tarjetas de Presentación</h4>
+                                        <div>+</div>
+                                        <h4>99</h4>
+                                        <div>-</div>
+                                        <h4>$50.55</h4>
+                                        <h4>X</h4>
+                                    </div>
+                                    <div>
+                                        Medidas: 7 cm x 12 cm.
+                                    </div>
+                                    <div>
+                                        Hay archivos asociados a este producto. Editar
+                                    </div>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4 order-summary">
+                        <div class="order-summary-bg">
+                            <h2>Resumen del pedido</h2>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <h3>Subtotal</h3>
+                                <h3>$151.65</h3>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h3>Diseño profesional</h3>
+                                <h3 style="color:#52CE5F">PENDIENTE</h3>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h3>Envío</h3>
+                                <h3 style="color:#20ACE7">GRATIS</h3>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <h2>Total estimado</h2>
+                                <h2>$151.65</h2>
+                            </div>
+                            <h4>Impuestos incluídos</h4>
+                            <h4>Los tiempos estimados de envío son de 4 a 5 días hábiles.</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="square-dots">
+            <div class="container">
+                <div class="col-md-12">
+                    <img load="lazy" src="img/square-dots.svg" alt="square dots">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="col-md-2">
+                    <div class="brand-logo"><img load="lazy" src="img/imprimu-logo.svg" alt="imprimu logo"></div>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <a href="#">
+                            <li>Menú rápido</li>
+                        </a>
+                        <a href="#">
+                            <li>Productos</li>
+                        </a>
+                        <a href="#">
+                            <li>Sobre Nosotros</li>
+                        </a>
+                        <a href="#">
+                            <li>Corporativo</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <a href="#">
+                            <li>Ayuda y Soporte</li>
+                        </a>
+                        <a href="#">
+                            <li>Recibe ayuda de un diseñador profesional</li>
+                        </a>
+                        <a href="#">
+                            <li>Preguntas Frecuentes</li>
+                        </a>
+                        <a href="#">
+                            <li>Contáctanos</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <a href="#">
+                            <li>Términos y Condiciones</li>
+                        </a>
+                        <a href="#">
+                            <li>Políticas de Cancelación y de reembolso</li>
+                        </a>
+                        <a href="#">
+                            <li>Aviso y Política de Cookies</li>
+                        </a>
+                        <a href="#">
+                            <li>Entregas y Servicios</li>
+                        </a>
+                        <a href="#">
+                            <li>Política de Privacidad</li>
+                        </a>
+                        <a href="#">
+                            <li>Términos y Condiciones</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p>Derechos reservados IMPRIMU S.A. - 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
