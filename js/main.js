@@ -803,7 +803,7 @@ function paperSelector(n) {
 }
 
 //************************************************************************/
-//FUNCTION USED TO TOOGLE CATEGORY MENU ON PRODUCT PAGE
+//FUNCTION USED TO TOOGLE CATEGORY MENU ON PRODUCT PAGE AND OTHER PAGES
 //************************************************************************/
 
 function toggleCategoryMenu() {
@@ -1005,4 +1005,13 @@ function toggleProductsMenu() {
         // Animation complete.
       }
     );
+  $('.pages').find(".cart").animate(
+    {
+      "margin-top": "20px",
+    },
+    500,
+    function () {
+      // Animation complete.
+    }
+  );
 }
