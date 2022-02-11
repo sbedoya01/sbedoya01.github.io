@@ -2406,7 +2406,7 @@ table.roundedCorners tr:last-child>td {
 
 .cart a{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     color: #20ACE7;
     letter-spacing: -0.28px;
 }
@@ -2481,6 +2481,12 @@ table.roundedCorners tr:last-child>td {
     letter-spacing: -0.6px;
     align-self: center;
     min-width: 260px;
+}
+
+.items-ordered p{
+    padding-bottom: 0;
+    line-height: 16px;
+    margin-bottom: 0;
 }
 
 .items-ordered .quantity-controls{
@@ -2567,6 +2573,7 @@ table.roundedCorners tr:last-child>td {
     color: #838383;
     letter-spacing: -0.2px;
     margin-top: 22px;
+    display: flex;
 }
 
 .items-ordered .items-ordered-info  div:nth-last-child(2) img{
@@ -3584,7 +3591,8 @@ label{
         margin-right: 0px;
     }
     .items-ordered button{
-        left: 80%;
+        left: 50%;
+        margin-left: 274px;
     }
     .items-ordered h4:first-child{
         font-size: 15px;
@@ -3594,6 +3602,15 @@ label{
     }
     .items-ordered .quantity-controls-mobile a:first-child{
         margin-left: 0;
+    }
+    .cart .col-12 > a{
+        display: none;
+    }
+    .cart .order-summary{
+        margin: 0 auto;
+    }
+    .cart .request-quote-btn{
+        display: none;
     }
 }
 
@@ -4267,6 +4284,56 @@ label{
     }
     .product-gallery .card-img-top{
         height: 155px;
+    }
+    .buying-steps{
+        width: 20.45rem;
+        height: 91.64px;
+    }
+    .cart .container,
+    .buying-steps ul{
+        padding: 0;
+    }
+    .cart ul li .rounded-div{
+        width: 40px;
+        height: 40px;
+    }
+    .buying-steps hr{
+        width: 268px;
+        top: 39px;
+    }
+    .buying-steps ul li > div{
+        width: 82px;
+    }
+    .buying-steps ul h5{
+        margin-top: 6.58px;
+        font-size: 10px;
+    }
+    .cart ul li:first-child .rounded-div img{
+        width: 17px;
+        margin: -9px;
+    }
+    .rounded-div img{
+        width: 20px;
+        margin: -10px;
+    }
+    .cart ul li .rounded-div{
+        border: 2px solid #D5D5D5;
+    }
+    .items-ordered{
+        width: 330px;
+    }
+    .items-ordered li > div:last-child{
+        margin: 0 0 0 12px !important;
+    }
+    .items-ordered button{
+        margin-left: 134px;
+    }
+    .items-ordered h4:first-child{
+        min-width: auto;
+        max-width: 135px;
+    }
+    .items-ordered .quantity-controls+h4{
+        margin-right: 5.36px;
     }
 
 }

@@ -860,6 +860,15 @@ function toggleCategoryMenu() {
       // Animation complete.
     }
   );
+  $(".cart").animate(
+    {
+      top: "269px",
+    },
+    500,
+    function () {
+      // Animation complete.
+    }
+  );
   $(".breadcrumbs").find("span").css("margin-top", "19px");
   $(".pages .square-dots").css("margin-top", "50rem");
 }
