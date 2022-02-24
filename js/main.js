@@ -145,20 +145,20 @@ function selectCategory(index) {
         );
       $(".menu-item").removeClass("selected");
       $(".menu-item").eq(1).addClass("selected");
-      $("#product-carousel-list").find("li").fadeOut("slow");
-      setTimeout(() => {
-        $("#product-carousel-list").find("li").fadeIn("slow");
-        $("#product-carousel-list")
-          .find("li")
-          .first()
-          .find("img")
-          .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
-        $("#product-carousel-list")
-          .find("li")
-          .first()
-          .find("a")
-          .attr("href", "product-business-card.html");
-      }, 500);
+      // $("#product-carousel-list").find("li").fadeOut("slow");
+      // setTimeout(() => {
+      //   $("#product-carousel-list").find("li").fadeIn("slow");
+      //   $("#product-carousel-list")
+      //     .find("li")
+      //     .first()
+      //     .find("img")
+      //     .attr("src", "https://imprimu.com/wp-content/uploads/2021/09/ss.png");
+      //   $("#product-carousel-list")
+      //     .find("li")
+      //     .first()
+      //     .find("a")
+      //     .attr("href", "product-business-card.html");
+      // }, 500);
       break;
     case 2:
       toggleProductsMenu();

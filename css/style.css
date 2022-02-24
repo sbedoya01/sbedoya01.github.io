@@ -371,11 +371,11 @@ a:hover {
     -webkit-overflow-scrolling: touch;
 }
 
-.products-carousel ul::-webkit-scrollbar, .carousel ul::-webkit-scrollbar, #value-props-mobile-carousel::-webkit-scrollbar, .latest-blog-posts ul::-webkit-scrollbar, .customer-review ul::-webkit-scrollbar, .social-media-feed-images::-webkit-scrollbar, .more-products ul::-webkit-scrollbar, .product-images-carousel ul::-webkit-scrollbar {
+.products-carousel ul::-webkit-scrollbar, .carousel ul::-webkit-scrollbar, #value-props-mobile-carousel::-webkit-scrollbar, .latest-blog-posts ul::-webkit-scrollbar, .customer-review ul::-webkit-scrollbar, .social-media-feed-images::-webkit-scrollbar, .more-products ul::-webkit-scrollbar, .product-images-carousel ul::-webkit-scrollbar, .seasonal-banner ul::-webkit-scrollbar{
     display: none;
 }
 
-.products-carousel ul, .carousel ul, #value-props-mobile-carousel, .latest-blog-posts ul, .customer-review ul, .social-media-feed-images, .more-products ul, .product-images-carousel ul {
+.products-carousel ul, .carousel ul, #value-props-mobile-carousel, .latest-blog-posts ul, .customer-review ul, .social-media-feed-images, .more-products ul, .product-images-carousel ul, .seasonal-banner ul {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -583,10 +583,39 @@ a:hover {
 .seasonal-banner {
     height: auto;
     border-radius: 10px;
+    /* background: rgb(238, 59, 7);
+    background: linear-gradient(180deg, rgba(238, 59, 7, 1) 0%, rgba(187, 51, 10, 1) 50%, rgba(132, 42, 14, 1) 100%); */
+    /* padding: 22px 0 22px 33px; */
+    box-shadow: 0px 3px 6px #00000029;
+}
+.seasonal-banner ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 363px;
+}
+.seasonal-banner ul li{
+    min-width: 100%;
+    scroll-snap-align: center;
+}
+.seasonal-banner ul li:first-child{
+    height: auto;
+    border-radius: 10px;
     background: rgb(238, 59, 7);
     background: linear-gradient(180deg, rgba(238, 59, 7, 1) 0%, rgba(187, 51, 10, 1) 50%, rgba(132, 42, 14, 1) 100%);
     padding: 22px 0 22px 33px;
-    box-shadow: 0px 3px 6px #00000029;
+}
+.seasonal-banner ul li:last-child{
+    height: auto;
+    border-radius: 10px;
+    background: rgb(22, 7, 238);
+    background: linear-gradient(180deg, rgb(57, 7, 238) 0%, rgb(106, 9, 170) 50%, rgb(35, 2, 54) 100%);
+    padding: 22px 0 22px 33px;
 }
 
 .category {
@@ -680,9 +709,9 @@ a:hover {
 }
 
 .seasonal-banner-zigzag {
-    position: absolute;
-    top: 2rem;
-    left: 50.7rem;
+    position: relative;
+    top: -19rem;
+    left: 47.7rem;
 }
 
 .seasonal-banner-zigzag img {
@@ -697,25 +726,25 @@ a:hover {
 }
 
 .seasonal-images img {
-    position: absolute;
-    top: 5rem;
-    right: 11rem;
+    position: relative;
+    top: -32rem;
+    right: -27rem;
     width: 284px;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 50%);
 }
 
 .seasonal-images img:first-child {
-    position: absolute;
+    position: relative;
     left: 29rem;
-    top: 9rem;
+    top: -30rem;
     width: 7rem;
     box-shadow: none;
 }
 
 .seasonal-images img:last-child {
-    position: absolute;
-    left: 29rem;
-    top: 2rem;
+    position: relative;
+    left: 0rem;
+    top: -34rem;
     width: 29rem;
     box-shadow: none;
 }
@@ -1131,7 +1160,7 @@ a:hover {
     display: flex;
 }
 
-.facebook-btn, .pinterest-btn, .instagram-btn, .twitter-btn {
+.facebook-btn, .linkedin-btn, .instagram-btn, .twitter-btn {
     width: 135px;
     height: 40px;
     border-radius: 10px;
@@ -1146,8 +1175,8 @@ a:hover {
     background-color: #1777F2;
 }
 
-.pinterest-btn {
-    background-color: #E60122;
+.linkedin-btn {
+    background-color: rgb(229, 247, 255);
 }
 
 .twitter-btn {
@@ -1158,13 +1187,20 @@ a:hover {
     background-color: #000303;
 }
 
-.facebook-btn img, .pinterest-btn img, .instagram-btn img, .twitter-btn img {
+.facebook-btn img, .linkedin-btn img, .instagram-btn img, .twitter-btn img {
     width: 30px;
     margin: 5px 0 5px 11px;
 }
 
-.facebook-btn p, .pinterest-btn p, .instagram-btn p, .twitter-btn p {
+.facebook-btn p, .instagram-btn p, .twitter-btn p {
     color: #FFF;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: -0.33px;
+    padding-bottom: 0.2rem;
+}
+.linkedin-btn p{
+    color: #007ab9;
     font-size: 11px;
     font-weight: bold;
     letter-spacing: -0.33px;
@@ -4132,7 +4168,7 @@ label{
         margin: 0;
     }
 
-    .pinterest-btn,
+    .linkedin-btn,
     .instagram-btn {
         margin: 0;
     }
@@ -4837,7 +4873,7 @@ label{
         margin: 0;
     }
 
-    .facebook-btn, .pinterest-btn, .instagram-btn, .twitter-btn {
+    .facebook-btn, .linkedin-btn, .instagram-btn, .twitter-btn {
         width: 135px;
     }
 
